@@ -55,7 +55,10 @@ def collect_curves_data(genus, rank):
         'Upgrade-Insecure-Requests': '1'
     })
     session.cookies.set('human', '1', domain='beta.lmfdb.org', path='/')
-    for label in curves_list['label']:
+    files = os.listdir(curves_path)
+    known_labels = [f[:-2] for f in files if os.path.isfile(os.path.join(curves_path, f))]
+    curves_labels = curves_list.loc[~curves_list['label'].isin(known_labels)]['label']
+    for label in curves_labels:
         url_curve = curve_url.format(curve_label=label)
         response = session.get(url_curve)
         response.raise_for_status()
