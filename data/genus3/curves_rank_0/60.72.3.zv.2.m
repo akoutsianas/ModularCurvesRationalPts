@@ -1,0 +1,52 @@
+
+// Modular curves downloaded from the LMFDB on 09 October 2025.
+// Magma code for modular curve with label 60.72.3.zv.2
+
+// Other names and/or labels
+// Cummins-Pauli label: 20K3
+// Rouse-Sutherland-Zureick-Brown label: 60.72.3.750
+
+// Group data
+level := 60;
+// Elements that, together with Gamma(level), generate the group
+gens := [[21, 40, 4, 17], [23, 0, 56, 43], [31, 50, 42, 1], [43, 15, 34, 17], [59, 5, 50, 37]];
+// Group contains -1?
+ContainsMinus1 := true;
+// Index in Gamma(1)
+index := 72;
+
+// Curve data
+conductor := [[2, 12], [3, 4], [5, 3]];
+bad_primes := [2, 3, 5];
+// Genus
+g := 3;
+// Rank
+r := 0
+;// Exact gonality known
+gamma := None;
+
+// Modular data
+// Number of cusps
+Ncusps := 6
+;// Number of rational cusps
+Nrat_cusps := 2
+;// CM discriminants
+CM_discs := [];
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["20.36.1.j.1"];
+
+// Models for this modular curve, if computed
+Pol<x,y,z> := PolynomialRing(Rationals(), 3);
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Canonical model
+model_0 := [9*x^4-3*x^2*y^2-4*y^4+2*y^3*z-3*x^2*z^2-4*y^2*z^2+2*y*z^3];
+
+// Maps from this modular curve, if computed
+
+// j-invariant map from the canonical model
+//   Coordinate number 0:
+map_0_coord_0 := -1*(3349755*x^2*y^16-23891760*x^2*y^15*z+85936140*x^2*y^14*z^2-204729120*x^2*y^13*z^3+357691140*x^2*y^12*z^4-482865840*x^2*y^11*z^5+517211940*x^2*y^10*z^6-442734240*x^2*y^9*z^7+301088970*x^2*y^8*z^8-160701840*x^2*y^7*z^9+66324180*x^2*y^6*z^10-20797920*x^2*y^5*z^11+4841460*x^2*y^4*z^12-808080*x^2*y^3*z^13+91260*x^2*y^2*z^14-6240*x^2*y*z^15+195*x^2*z^16+1736451*y^18-12831534*y^17*z+48051927*y^16*z^2-120667752*y^15*z^3+227141100*y^14*z^4-336648744*y^13*z^5+402484636*y^12*z^6-393164728*y^11*z^7+314364298*y^10*z^8-203834500*y^9*z^9+105402562*y^8*z^10-42604248*y^7*z^11+13163164*y^6*z^12-3024584*y^5*z^13+497100*y^4*z^14-54792*y^3*z^15+3563*y^2*z^16-94*y*z^17-z^18);
+//   Coordinate number 1:
+map_0_coord_1 := 1*(y^10*(2*y-z)^2*(27*x^2*y^4-72*x^2*y^3*z+66*x^2*y^2*z^2-24*x^2*y*z^3+3*x^2*z^4-29*y^6+58*y^5*z-83*y^4*z^2+76*y^3*z^3-39*y^2*z^4+10*y*z^5-z^6));

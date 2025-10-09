@@ -1,0 +1,65 @@
+
+// Modular curves downloaded from the LMFDB on 09 October 2025.
+// Magma code for modular curve with label 24.72.3.gp.1
+
+// Other names and/or labels
+// Cummins-Pauli label: 12G3
+// Rouse-Sutherland-Zureick-Brown label: 24.72.3.689
+
+// Group data
+level := 24;
+// Elements that, together with Gamma(level), generate the group
+gens := [[1, 5, 2, 5], [1, 9, 16, 11], [13, 3, 16, 23], [17, 7, 22, 9]];
+// Group contains -1?
+ContainsMinus1 := true;
+// Index in Gamma(1)
+index := 72;
+
+// Curve data
+conductor := [[2, 14], [3, 5]];
+bad_primes := [2, 3];
+// Genus
+g := 3;
+// Rank
+r := 1
+;// Exact gonality known
+gamma := 2;
+
+// Modular data
+// Number of cusps
+Ncusps := 8
+;// Number of rational cusps
+Nrat_cusps := 0
+;// CM discriminants
+CM_discs := [];
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["12.36.2.l.1", "24.36.0.v.1", "24.36.1.v.1", "24.36.1.cn.1", "24.36.1.dw.1", "24.36.2.bb.1", "24.36.2.fm.1"];
+
+// Models for this modular curve, if computed
+Pol<x,y,z,w,t,u> := PolynomialRing(Rationals(), 6);
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Embedded model
+model_0 := [z*w-y*t,x*w+4*y*w-z*t,x*y+4*y^2-z^2,6*x*z-w*t,6*x*y-w^2,6*x^2+4*w^2-t^2,3*x^2+6*z^2-w^2-t*u+u^2];
+
+// Weierstrass model
+model_1 := [96*x^8-1152*x^6*z^2+6480*x^4*z^4-2592*x^2*z^6+y^2+486*z^8];
+
+// Maps from this modular curve, if computed
+
+// j-invariant map from the embedded model
+//   Coordinate number 0:
+map_0_coord_0 := 2^8*3^3*(x*t^8-14*x*t^7*u+50*x*t^6*u^2-64*x*t^5*u^3+44*x*t^4*u^4-104*x*t^3*u^5+184*x*t^2*u^6-128*x*t*u^7+32*x*u^8+2*y*t^8-48*y*t^6*u^2+64*y*t^5*u^3+144*y*t^4*u^4-480*y*t^3*u^5+608*y*t^2*u^6-384*y*t*u^7+96*y*u^8);
+//   Coordinate number 1:
+map_0_coord_1 := 1*(7*x*t^8-50*x*t^7*u+158*x*t^6*u^2-304*x*t^5*u^3+404*x*t^4*u^4-392*x*t^3*u^5+280*x*t^2*u^6-128*x*t*u^7+32*x*u^8-16*y*t^8+24*y*t^7*u+72*y*t^6*u^2-224*y*t^5*u^3+192*y*t^4*u^4-96*y*t^3*u^5+32*y*t^2*u^6);
+
+// Map from the embedded model to the Weierstrass model of modular curve with label 24.72.3.gp.1
+//   Coordinate number 0:
+map_1_coord_0 := 1*(-3/5*z*w^2+3/20*z*t^2+1/10*w^2*t-1/20*w*t^2);
+//   Coordinate number 1:
+map_1_coord_1 := 1*(-69/1250*z*w^7*t^4+69/625*z*w^7*t^3*u+3/250*z*w^6*t^5-3/125*z*w^6*t^4*u+27/625*z*w^5*t^6-54/625*z*w^5*t^5*u-3/1000*z*w^4*t^7+3/500*z*w^4*t^6*u-147/20000*z*w^3*t^8+147/10000*z*w^3*t^7*u-3/625*w^7*t^5+6/625*w^7*t^4*u-3/250*w^6*t^6+3/125*w^6*t^5*u+3/2500*w^5*t^7-3/1250*w^5*t^6*u+3/1000*w^4*t^8-3/500*w^4*t^7*u);
+//   Coordinate number 2:
+map_1_coord_2 := 1*(2/5*z*w^2-1/10*z*t^2+1/10*w^2*t+1/20*w*t^2);
+// Codomain equation:
+map_1_codomain := [96*x^8-1152*x^6*z^2+6480*x^4*z^4-2592*x^2*z^6+y^2+486*z^8];
