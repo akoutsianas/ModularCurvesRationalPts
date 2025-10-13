@@ -1,0 +1,43 @@
+
+// Modular curves downloaded from the LMFDB on 13 October 2025.
+// Magma code for modular curve with label 29.120.4-29.a.2.1
+
+// Other names and/or labels
+// Cummins-Pauli label: 29A4
+// Rouse-Sutherland-Zureick-Brown label: 29.120.4.3
+// Sutherland label: 29B.7.2
+
+// Group data
+level := 29;
+// Elements that, together with Gamma(level), generate the group
+gens := [[23, 19, 0, 1], [27, 14, 0, 25]];
+// Group contains -1?
+ContainsMinus1 := false;
+// Index in Gamma(1)
+index := 120;
+
+// Curve data
+conductor := [[29, 4]];
+bad_primes := [29];
+// Genus
+g := 4;
+// Rank
+r := 0
+;// Exact gonality known
+gamma := None;
+
+// Modular data
+// Number of cusps
+Ncusps := 4
+;// Number of rational cusps
+Nrat_cusps := 2
+;// CM discriminants
+CM_discs := [];
+// Groups containing given group, corresponding to curves covered by given curve
+covers := [];
+
+// Models for this modular curve, if computed
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Maps from this modular curve, if computed

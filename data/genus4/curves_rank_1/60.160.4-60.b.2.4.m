@@ -1,0 +1,42 @@
+
+// Modular curves downloaded from the LMFDB on 13 October 2025.
+// Magma code for modular curve with label 60.160.4-60.b.2.4
+
+// Other names and/or labels
+// Cummins-Pauli label: 60B4
+// Rouse-Sutherland-Zureick-Brown label: 60.160.4.56
+
+// Group data
+level := 60;
+// Elements that, together with Gamma(level), generate the group
+gens := [[11, 51, 21, 44], [29, 32, 51, 47], [55, 11, 18, 23]];
+// Group contains -1?
+ContainsMinus1 := false;
+// Index in Gamma(1)
+index := 160;
+
+// Curve data
+conductor := [[2, 12], [3, 4], [5, 8]];
+bad_primes := [2, 3, 5];
+// Genus
+g := 4;
+// Rank
+r := 1
+;// Exact gonality known
+gamma := 3;
+
+// Modular data
+// Number of cusps
+Ncusps := 2
+;// Number of rational cusps
+Nrat_cusps := 2
+;// CM discriminants
+CM_discs := [];
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["60.32.0-60.b.1.7", "60.80.2-60.a.1.2", "60.80.2-60.a.1.10"];
+
+// Models for this modular curve, if computed
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Maps from this modular curve, if computed
