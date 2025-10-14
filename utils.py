@@ -7,7 +7,7 @@ db_list_url = ("https://beta.lmfdb.org/ModularCurve/Q/"
        "?download=1&query=%7B%27genus%27%3A+{genus}%2C+%27rank%27%3A+{rank}%7D&count=None&"
        "showcol=RSZBlabel.RZBlabel.CPlabel.SZlabel.Slabel.conductor.simple.squarefree."
        "contains_negative_one.dims.models.num_known_degree1_points.pointless.generators&Submit=csv")
-curve_url = "https://beta.lmfdb.org/ModularCurve/download_to_magma/{curve_label}"
+curve_url = "https://beta.lmfdb.org/ModularCurve/data/{curve_label}?_format=json"
 
 
 def collect_list_of_curves(genus, rank):
@@ -56,13 +56,13 @@ def collect_curves_data(genus, rank):
     })
     session.cookies.set('human', '1', domain='beta.lmfdb.org', path='/')
     files = os.listdir(curves_path)
-    known_labels = [f[:-2] for f in files if os.path.isfile(os.path.join(curves_path, f))]
+    known_labels = [f[:-5] for f in files if os.path.isfile(os.path.join(curves_path, f))]
     curves_labels = curves_list.loc[~curves_list['label'].isin(known_labels)]['label']
     for label in curves_labels:
         url_curve = curve_url.format(curve_label=label)
         response = session.get(url_curve)
         response.raise_for_status()
-        save_path = os.path.join(curves_path, f'{label}.m')
+        save_path = os.path.join(curves_path, f'{label}.json')
         with open(save_path, 'w', encoding='utf-8') as file:
             file.write(response.text)
 
