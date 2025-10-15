@@ -1,0 +1,1704 @@
+{
+  "labels": [
+    "39.112.3-39.a.1.6",
+    "39.56.3.a.1",
+    "39.56.3.a.1",
+    "39.56.3.a.1",
+    "39.56.3.a.1"
+  ],
+  "tables": [
+    "gps_gl2zhat_fine",
+    "gps_gl2zhat_fine",
+    "modcurve_models",
+    "modcurve_modelmaps",
+    "modcurve_points"
+  ],
+  "label_cols": [
+    "label",
+    "label",
+    "modcurve",
+    "domain_label",
+    "curve_label"
+  ],
+  "timestamp": "2025-10-15T18:48:08.024123",
+  "data": [
+    [
+      {
+        "id": 445750,
+        "CPlabel": "39A3",
+        "Glabel": null,
+        "RSZBlabel": "39.112.3.3",
+        "RZBlabel": null,
+        "SZlabel": null,
+        "Slabel": null,
+        "all_degree1_points_known": null,
+        "bad_primes": [
+          3,
+          13
+        ],
+        "canonical_conjugator": [
+          0,
+          25,
+          25,
+          1
+        ],
+        "canonical_generators": [
+          [
+            0,
+            8,
+            34,
+            26
+          ],
+          [
+            0,
+            11,
+            28,
+            35
+          ],
+          [
+            0,
+            14,
+            25,
+            2
+          ],
+          [
+            0,
+            20,
+            35,
+            24
+          ],
+          [
+            0,
+            20,
+            37,
+            35
+          ],
+          [
+            0,
+            22,
+            4,
+            18
+          ],
+          [
+            0,
+            37,
+            28,
+            9
+          ],
+          [
+            0,
+            38,
+            1,
+            11
+          ]
+        ],
+        "cm_discriminants": [],
+        "coarse_class": "39.56.3.a",
+        "coarse_class_num": 1,
+        "coarse_index": 56,
+        "coarse_label": "39.56.3.a.1",
+        "coarse_level": 39,
+        "coarse_num": 1,
+        "conductor": [
+          [
+            3,
+            3
+          ],
+          [
+            13,
+            3
+          ]
+        ],
+        "contains_negative_one": false,
+        "curve_label": null,
+        "cusp_orbits": [
+          [
+            1,
+            4
+          ]
+        ],
+        "cusp_widths": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            39,
+            1
+          ]
+        ],
+        "cusps": 4,
+        "determinant_label": "1.1.1",
+        "dims": [
+          1,
+          2
+        ],
+        "factorization": [],
+        "fine_num": 6,
+        "generators": [
+          [
+            1,
+            14,
+            0,
+            5
+          ],
+          [
+            17,
+            27,
+            0,
+            10
+          ],
+          [
+            19,
+            20,
+            0,
+            19
+          ]
+        ],
+        "genus": 3,
+        "genus_minus_rank": 3,
+        "has_obstruction": -1,
+        "index": 112,
+        "isogeny_orbits": [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            13,
+            1,
+            1
+          ],
+          [
+            13,
+            13,
+            1
+          ],
+          [
+            39,
+            1,
+            1
+          ],
+          [
+            39,
+            3,
+            1
+          ],
+          [
+            39,
+            13,
+            1
+          ],
+          [
+            39,
+            39,
+            1
+          ]
+        ],
+        "kummer_orbits": [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            13,
+            6,
+            1
+          ],
+          [
+            13,
+            78,
+            1
+          ],
+          [
+            39,
+            12,
+            1
+          ],
+          [
+            39,
+            36,
+            1
+          ],
+          [
+            39,
+            156,
+            1
+          ],
+          [
+            39,
+            468,
+            1
+          ]
+        ],
+        "label": "39.112.3-39.a.1.6",
+        "lattice_labels": null,
+        "lattice_x": null,
+        "level": 39,
+        "level_is_squarefree": true,
+        "level_radical": 39,
+        "log_conductor": {
+          "__RealLiteral__": 0,
+          "data": "10.99068493838893928235",
+          "prec": 77
+        },
+        "models": null,
+        "mults": [
+          1,
+          1
+        ],
+        "name": null,
+        "newforms": null,
+        "nu2": 0,
+        "nu3": 2,
+        "num_bad_primes": 2,
+        "num_known_degree1_noncm_points": 0,
+        "num_known_degree1_noncusp_points": 0,
+        "num_known_degree1_points": 1,
+        "obstructions": null,
+        "orbits": [
+          [
+            3,
+            2,
+            1
+          ],
+          [
+            3,
+            6,
+            1
+          ],
+          [
+            13,
+            12,
+            1
+          ],
+          [
+            13,
+            156,
+            1
+          ],
+          [
+            39,
+            24,
+            1
+          ],
+          [
+            39,
+            72,
+            1
+          ],
+          [
+            39,
+            312,
+            1
+          ],
+          [
+            39,
+            936,
+            1
+          ]
+        ],
+        "parents": [
+          "39.8.0-3.a.1.2"
+        ],
+        "parents_conj": null,
+        "pointless": false,
+        "power": false,
+        "psl2index": 56,
+        "psl2label": "39.56.3.a.1",
+        "psl2level": 39,
+        "q_gonality": 2,
+        "q_gonality_bounds": [
+          2,
+          2
+        ],
+        "qbar_gonality": 2,
+        "qbar_gonality_bounds": [
+          2,
+          2
+        ],
+        "rank": 0,
+        "rational_cusps": 4,
+        "reductions": [
+          "3.4.0.a.1",
+          "13.14.0.a.1"
+        ],
+        "scalar_label": "3.2.1",
+        "simple": false,
+        "sl2label": "39.112.3-39.a.1.1",
+        "sl2level": 39,
+        "squarefree": true,
+        "trace_hash": 1039606320029562550,
+        "traces": null
+      }
+    ],
+    [
+      {
+        "id": 7421211,
+        "CPlabel": "39A3",
+        "Glabel": null,
+        "RSZBlabel": "39.56.3.1",
+        "RZBlabel": null,
+        "SZlabel": null,
+        "Slabel": null,
+        "all_degree1_points_known": null,
+        "bad_primes": [
+          3,
+          13
+        ],
+        "canonical_conjugator": [
+          0,
+          25,
+          25,
+          1
+        ],
+        "canonical_generators": [
+          [
+            0,
+            1,
+            38,
+            28
+          ],
+          [
+            0,
+            2,
+            11,
+            30
+          ],
+          [
+            0,
+            19,
+            2,
+            4
+          ],
+          [
+            0,
+            19,
+            4,
+            15
+          ],
+          [
+            0,
+            22,
+            4,
+            18
+          ],
+          [
+            0,
+            25,
+            14,
+            37
+          ],
+          [
+            0,
+            28,
+            11,
+            4
+          ],
+          [
+            0,
+            31,
+            5,
+            13
+          ]
+        ],
+        "cm_discriminants": [],
+        "coarse_class": "39.56.3.a",
+        "coarse_class_num": 1,
+        "coarse_index": 56,
+        "coarse_label": "39.56.3.a.1",
+        "coarse_level": 39,
+        "coarse_num": 1,
+        "conductor": [
+          [
+            3,
+            3
+          ],
+          [
+            13,
+            3
+          ]
+        ],
+        "contains_negative_one": true,
+        "curve_label": null,
+        "cusp_orbits": [
+          [
+            1,
+            4
+          ]
+        ],
+        "cusp_widths": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            39,
+            1
+          ]
+        ],
+        "cusps": 4,
+        "determinant_label": "1.1.1",
+        "dims": [
+          1,
+          2
+        ],
+        "factorization": [
+          "3.4.0.a.1",
+          "13.14.0.a.1"
+        ],
+        "fine_num": 0,
+        "generators": [
+          [
+            1,
+            23,
+            0,
+            14
+          ],
+          [
+            4,
+            37,
+            0,
+            19
+          ],
+          [
+            8,
+            2,
+            0,
+            22
+          ],
+          [
+            31,
+            31,
+            0,
+            23
+          ]
+        ],
+        "genus": 3,
+        "genus_minus_rank": 3,
+        "has_obstruction": -1,
+        "index": 56,
+        "isogeny_orbits": [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            13,
+            1,
+            1
+          ],
+          [
+            13,
+            13,
+            1
+          ],
+          [
+            39,
+            1,
+            1
+          ],
+          [
+            39,
+            3,
+            1
+          ],
+          [
+            39,
+            13,
+            1
+          ],
+          [
+            39,
+            39,
+            1
+          ]
+        ],
+        "kummer_orbits": [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            13,
+            6,
+            1
+          ],
+          [
+            13,
+            78,
+            1
+          ],
+          [
+            39,
+            12,
+            1
+          ],
+          [
+            39,
+            36,
+            1
+          ],
+          [
+            39,
+            156,
+            1
+          ],
+          [
+            39,
+            468,
+            1
+          ]
+        ],
+        "label": "39.56.3.a.1",
+        "lattice_labels": [
+          "1.1.0.a.1",
+          "3.4.0.a.1",
+          "13.14.0.a.1",
+          "39.56.3.a.1"
+        ],
+        "lattice_x": [
+          5100,
+          7892,
+          2365,
+          5100
+        ],
+        "level": 39,
+        "level_is_squarefree": true,
+        "level_radical": 39,
+        "log_conductor": {
+          "__RealLiteral__": 0,
+          "data": "10.99068493838893928235",
+          "prec": 77
+        },
+        "models": 3,
+        "mults": [
+          1,
+          1
+        ],
+        "name": "X0(39)",
+        "newforms": [
+          "39.2.a.a",
+          "39.2.a.b"
+        ],
+        "nu2": 0,
+        "nu3": 2,
+        "num_bad_primes": 2,
+        "num_known_degree1_noncm_points": 0,
+        "num_known_degree1_noncusp_points": 0,
+        "num_known_degree1_points": 1,
+        "obstructions": [],
+        "orbits": [
+          [
+            3,
+            2,
+            1
+          ],
+          [
+            3,
+            6,
+            1
+          ],
+          [
+            13,
+            12,
+            1
+          ],
+          [
+            13,
+            156,
+            1
+          ],
+          [
+            39,
+            24,
+            1
+          ],
+          [
+            39,
+            72,
+            1
+          ],
+          [
+            39,
+            312,
+            1
+          ],
+          [
+            39,
+            936,
+            1
+          ]
+        ],
+        "parents": [
+          "3.4.0.a.1",
+          "13.14.0.a.1"
+        ],
+        "parents_conj": [
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ]
+        ],
+        "pointless": false,
+        "power": false,
+        "psl2index": 56,
+        "psl2label": "39.56.3.a.1",
+        "psl2level": 39,
+        "q_gonality": 2,
+        "q_gonality_bounds": [
+          2,
+          2
+        ],
+        "qbar_gonality": 2,
+        "qbar_gonality_bounds": [
+          2,
+          2
+        ],
+        "rank": 0,
+        "rational_cusps": 4,
+        "reductions": [
+          "3.4.0.a.1",
+          "13.14.0.a.1"
+        ],
+        "scalar_label": "1.1.1",
+        "simple": false,
+        "sl2label": "39.56.3.a.1",
+        "sl2level": 39,
+        "squarefree": true,
+        "trace_hash": 1039606320029562550,
+        "traces": [
+          -1,
+          1,
+          2,
+          -4,
+          0,
+          -1,
+          6,
+          0,
+          -8,
+          -6,
+          -4,
+          -6,
+          22,
+          -4,
+          -12,
+          2,
+          16,
+          2,
+          0,
+          4,
+          14,
+          8,
+          0,
+          22,
+          6,
+          -14,
+          16,
+          12,
+          -14,
+          6,
+          -16,
+          -12,
+          -10,
+          20,
+          -30,
+          -20,
+          -38,
+          40,
+          -4,
+          -6,
+          -20,
+          18,
+          -8,
+          6,
+          2,
+          40,
+          -44,
+          -4,
+          -32,
+          10,
+          -34,
+          -20,
+          22,
+          -12,
+          6,
+          48,
+          58,
+          -28,
+          -14,
+          38,
+          36,
+          -30,
+          -56,
+          24,
+          6,
+          26,
+          8,
+          14,
+          -52,
+          -30,
+          -18,
+          60,
+          -32,
+          -6,
+          -40,
+          12,
+          2,
+          66,
+          46,
+          -2,
+          -12,
+          42,
+          28,
+          14,
+          32,
+          12,
+          -2,
+          -2,
+          -22,
+          -28,
+          -4,
+          4,
+          36,
+          4,
+          0,
+          0,
+          -6,
+          46,
+          36,
+          50,
+          28,
+          42,
+          -4,
+          -18,
+          4,
+          -42,
+          40,
+          -50,
+          -64,
+          6,
+          0,
+          -86,
+          -42,
+          32,
+          44,
+          6,
+          0,
+          -8,
+          -22,
+          -44,
+          -6,
+          -26,
+          98,
+          16,
+          -64,
+          10,
+          10,
+          -16,
+          -24,
+          2,
+          24,
+          52,
+          40,
+          58,
+          38,
+          54,
+          50,
+          -40,
+          106,
+          30,
+          -24,
+          -30,
+          64,
+          -48,
+          -46,
+          44,
+          26,
+          -66,
+          -68,
+          -52,
+          18,
+          86,
+          -68,
+          -64,
+          20,
+          -120,
+          -64,
+          14,
+          6,
+          26,
+          -136,
+          62,
+          -44,
+          -68,
+          14,
+          44,
+          48,
+          -14
+        ]
+      }
+    ],
+    [
+      {
+        "id": 43281,
+        "dont_display": false,
+        "equation": [
+          "x^2*w+x*y*w+y*z*w",
+          "x^2*y+x*y^2+y^2*z",
+          "x^3+x^2*y+x*y*z",
+          "x^2*z+x*y*z+y*z^2",
+          "x^2*t+x*y*t+y*z*t",
+          "2*x*z*w-y*z*w+z^2*w+x*w^2-3*x*w*t",
+          "x^2*w-y^2*w+x*z*w-y*w^2+3*y*w*t",
+          "2*x*z*t-y*z*t+z^2*t+x*w*t-3*x*t^2",
+          "x^2*t-y^2*t+x*z*t-y*w*t+3*y*t^2",
+          "x^3+y^3+y^2*w-3*y^2*t",
+          "x^2*z-y^2*z+x*z^2-y*z*w-x^2*t-x*y*t+2*y*z*t",
+          "x^3-x*y^2+x^2*z-x*y*w-x^2*t+2*x*y*t-y*z*t",
+          "2*x*z^2-y*z^2+z^3+x*z*w-3*x*z*t",
+          "x*y*z+x^2*w+x*y*w-2*x*z*w-2*y*z*w+4*z*w^2-x*y*t+z*w*t",
+          "x^3+y^3-y^2*z-3*x*y*w-2*y^2*w+2*y*z*w+4*x*w^2+4*y*w^2-2*y^2*t+x*w*t+y*w*t",
+          "x*y^2+y^3-x^2*z+x^2*w-2*x*y*w-2*y^2*w-x*z*w-2*z^2*w-4*w^3+x^2*t-x*y*t-2*y^2*t+11*w^2*t+3*w*t^2"
+        ],
+        "modcurve": "39.56.3.a.1",
+        "model_type": 8,
+        "number_variables": 5,
+        "smooth": true,
+        "upload_id": null
+      },
+      {
+        "id": 43282,
+        "dont_display": false,
+        "equation": [
+          "x^6*y-x^6*z+4*x^5*y*z+39*x^4*y^2*z-4*x^5*z^2-78*x^4*y*z^2+78*x^3*y^2*z^2+39*x^4*z^3-156*x^3*y*z^3+39*x^2*y^2*z^3+77*x^3*z^4-100*x^2*y*z^4+62*x^2*z^5-25*x*y*z^5+24*x*z^6+4*z^7"
+        ],
+        "modcurve": "39.56.3.a.1",
+        "model_type": 2,
+        "number_variables": 3,
+        "smooth": false,
+        "upload_id": null
+      },
+      {
+        "id": 43283,
+        "dont_display": false,
+        "equation": [
+          "2*x^7*z-2*x^5*z^3+x^4*y+7*x^4*z^4+x^3*y*z-2*x^3*z^5+x^2*y*z^2+x*y*z^3+2*x*z^7+y^2+y*z^4"
+        ],
+        "modcurve": "39.56.3.a.1",
+        "model_type": 5,
+        "number_variables": 3,
+        "smooth": true,
+        "upload_id": null
+      }
+    ],
+    [
+      {
+        "id": 43296,
+        "codomain_label": "1.1.0.a.1",
+        "codomain_model_type": 1,
+        "coordinates": [
+          "3238717*x*w^8-3458758*x*w^7*t-9281869*x*w^6*t^2+3037648*x*w^5*t^3+4369880*x*w^4*t^4-2854216*x*w^3*t^5-365898*x*w^2*t^6+1946175*x*w*t^7-459459*x*t^8-72*y^9+486*y^8*t-342*y^7*t^2-1728*y^6*t^3-234*y^5*t^4+1548*y^4*t^5-414*y^3*t^6-11502*y^2*t^7+121981*y*z*w^7-4978699*y*z*w^6*t+309068*y*z*w^5*t^2+6186556*y*z*w^4*t^3+1183892*y*z*w^3*t^4-2189164*y*z*w^2*t^5-414810*y*z*w*t^6+407115*y*z*t^7+3299842*y*w^8-5384324*y*w^7*t-4121646*y*w^6*t^2+5369288*y*w^5*t^3-1117208*y*w^4*t^4-6126438*y*w^3*t^5+808018*y*w^2*t^6+3493932*y*w*t^7-927702*y*t^8+1015847*z^2*w^7-59837*z^2*w^6*t-3179174*z^2*w^5*t^2-1004764*z^2*w^4*t^3+1341424*z^2*w^3*t^4+270628*z^2*w^2*t^5-97974*z^2*w*t^6+151209*z^2*t^7+1759834*z*w^8+5830560*z*w^7*t-3986216*z*w^6*t^2-9600858*z*w^5*t^3-2296860*z*w^4*t^4+1946134*z*w^3*t^5+978038*z*w^2*t^6+123672*z*w*t^7+1098*z*t^8+1351568*w^9-2374104*w^8*t-8333788*w^7*t^2+5303814*w^6*t^3+12326790*w^5*t^4+4652384*w^4*t^5-281720*w^3*t^6-3251538*w^2*t^7-764550*w*t^8-216*t^9",
+          "w^3*(4655*x*w^5+4479*x*w^4*t-1297*x*w^3*t^2-2295*x*w^2*t^3+275*x*w*t^4+63*x*t^5+955*y*z*w^4-2376*y*z*w^3*t-3541*y*z*w^2*t^2-660*y*z*w*t^3+351*y*z*t^4+4868*y*w^5+2912*y*w^4*t+266*y*w^3*t^2+1158*y*w^2*t^3+998*y*w*t^4-288*y*t^5+1611*z^2*w^4+1842*z^2*w^3*t+19*z^2*w^2*t^2-700*z^2*w*t^3-87*z^2*t^4+1368*z*w^5+5022*z*w^4*t+7514*z*w^3*t^2+3682*z*w^2*t^3+620*z*w*t^4+24*z*t^5+1736*w^6-1558*w^5*t-7946*w^4*t^2-8334*w^3*t^3-2002*w^2*t^4-96*w*t^5)"
+        ],
+        "degree": 56,
+        "domain_label": "39.56.3.a.1",
+        "domain_model_type": 8,
+        "dont_display": false,
+        "factored": true,
+        "leading_coefficients": [
+          "-3^2",
+          "1"
+        ],
+        "upload_id": null
+      },
+      {
+        "id": 43297,
+        "codomain_label": "39.56.3.a.1",
+        "codomain_model_type": 2,
+        "coordinates": [
+          "x",
+          "t",
+          "z"
+        ],
+        "degree": 1,
+        "domain_label": "39.56.3.a.1",
+        "domain_model_type": 8,
+        "dont_display": false,
+        "factored": false,
+        "leading_coefficients": null,
+        "upload_id": null
+      },
+      {
+        "id": 43298,
+        "codomain_label": "39.56.3.a.1",
+        "codomain_model_type": 5,
+        "coordinates": [
+          "x",
+          "-x^4-x^3*z+40*x^2*z^2-39*x^2*z*t+38*x*z^3-39*x*z^2*t+12*z^4",
+          "-z"
+        ],
+        "degree": 1,
+        "domain_label": "39.56.3.a.1",
+        "domain_model_type": 8,
+        "dont_display": false,
+        "factored": false,
+        "leading_coefficients": null,
+        "upload_id": null
+      }
+    ],
+    [
+      {
+        "id": 1623935,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 10.7911936075545,
+        "jinv": "-231074/3,-29903/3,542351/3",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708303,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.76.1",
+        "j_height": 14.1297870638533,
+        "jinv": "11841983/8192,5739005/4096,-10268493/8192",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.76.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708306,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.379.1",
+        "j_height": 32.8101967224012,
+        "jinv": "-87949617934825967157/67108864,126751410143175203109/67108864,-43916918754307497561/67108864",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.379.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708309,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.331.1",
+        "j_height": 10.0650151717392,
+        "jinv": "49693/4,27305/4,11659/4",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.331.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708312,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.379.1",
+        "j_height": 26.7863513998491,
+        "jinv": "-3189270693605221785666882933/302231454903657293676544,1456836705823435189841278053/302231454903657293676544,91584176721474730638537063/302231454903657293676544",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.379.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708315,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.499.1",
+        "j_height": 17.477922235441,
+        "jinv": "-16736349448663/221184,-842941563535/73728,-3756922102651/221184",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.499.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708318,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.76.1",
+        "j_height": 12.9479171289307,
+        "jinv": "-10459836089/2,-8185855457,-9253252641/2",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.76.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708321,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 7.13124307300324,
+        "jinv": "-1358/27,-8843/27,-7234/27",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708324,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": null,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 17.9652396366002,
+        "jinv": "-186849990,-241376760,754792533",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708327,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.331.1",
+        "j_height": 31.4097252627905,
+        "jinv": "506785202211047333854830918557/67108864,34461181272373211008043990569/67108864,154885532385149700408332083211/67108864",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.331.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708330,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": null,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 16.036806777175,
+        "jinv": "-1646410915725012,-766521558209385,-1123391944324746",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708333,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.499.1",
+        "j_height": 31.9916510426209,
+        "jinv": "-726746083628989493600026729/33198531813531453579264,-829438684400007986630863505/5533088635588575596544,8952179299761118137672129251/33198531813531453579264",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.499.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708336,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.499.1",
+        "j_height": 16.9859141374941,
+        "jinv": "291120049439153/1649267441664,-56606743608007/549755813888,-557990037892627/1649267441664",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.499.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708339,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": null,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 8.17103418920548,
+        "jinv": "-30132,-14823,-20871",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708342,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 26.1840106831691,
+        "jinv": "-322824492375361610306007410/4052555153018976267,-150313676351617147974952478/4052555153018976267,-220281320449122217192087621/4052555153018976267",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708345,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.331.1",
+        "j_height": 16.7599312962592,
+        "jinv": "601700247274637/64,40915364533081/64,183893812806299/64",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.331.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708348,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 36.4047683725599,
+        "jinv": "-2155520390678663797685774596346/1594323,-1003548283623757789077445082519/1594323,-1470771494278286892076810260430/1594323",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708351,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": null,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.31.1",
+        "j_height": 10.2967098296626,
+        "jinv": "19674,-72180,66321",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.31.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708354,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.76.1",
+        "j_height": 16.0868073664701,
+        "jinv": "-4324207/4,-3772873/2,-34526001/32",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.76.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708357,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.499.1",
+        "j_height": 35.9151801136187,
+        "jinv": "-481270438169039262534596537/438244169232678912,-48525307522490698659641821/292162779488452608,-216120589363056591923947981/876488338465357824",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.499.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708360,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.379.1",
+        "j_height": 10.2273086716038,
+        "jinv": "3941163/4,-2767419/4,290439/4",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.379.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708363,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.331.1",
+        "j_height": 33.3838659171737,
+        "jinv": "4151562548678468191437824250925/302231454903657293676544,427529206776663008256999851129/302231454903657293676544,1454185235831553123191960242171/302231454903657293676544",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.331.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708366,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.379.1",
+        "j_height": 12.6943179194375,
+        "jinv": "-548339445/64,-177541659/64,-239066649/64",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.379.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708369,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 3,
+        "isolated": 4,
+        "j_field": "3.1.76.1",
+        "j_height": 7.00339662430371,
+        "jinv": "100,-328,-1329/2",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "3.1.76.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708815,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": -3,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 2,
+        "isolated": 4,
+        "j_field": "1.1.1.1",
+        "j_height": 0.0,
+        "jinv": "0",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "2.0.3.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708816,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": -27,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 2,
+        "isolated": 4,
+        "j_field": "1.1.1.1",
+        "j_height": 16.3241337343696,
+        "jinv": "-12288000",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "2.0.3.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708818,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 2,
+        "isolated": 4,
+        "j_field": "2.0.7.1",
+        "j_height": 12.1472020826019,
+        "jinv": "-154845/8,284931/8",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "2.0.7.1",
+        "upload_id": null
+      },
+      {
+        "id": 1708819,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": null,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": null,
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": false,
+        "degree": 2,
+        "isolated": 4,
+        "j_field": "2.0.7.1",
+        "j_height": 24.0236668201077,
+        "jinv": "-65033923835925/549755813888,167371429164111/549755813888",
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "2.0.7.1",
+        "upload_id": null
+      },
+      {
+        "id": 1766119,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": 4,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": {
+          "8": [
+            "-1:1:0:0:0",
+            "0:0:0:3:1",
+            "0:0:0:0:1",
+            "0:0:0:-1/4:1"
+          ]
+        },
+        "curve_genus": 3,
+        "curve_index": 56,
+        "curve_label": "39.56.3.a.1",
+        "curve_level": 39,
+        "curve_name": "X0(39)",
+        "cusp": true,
+        "degree": 1,
+        "isolated": null,
+        "j_field": "1.1.1.1",
+        "j_height": 0.0,
+        "jinv": null,
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "1.1.1.1",
+        "upload_id": null
+      }
+    ]
+  ]
+}
