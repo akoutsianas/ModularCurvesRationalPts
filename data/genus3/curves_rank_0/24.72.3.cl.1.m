@@ -1,0 +1,68 @@
+
+// Modular curves downloaded from the LMFDB on 08 October 2025.
+// Magma code for modular curve with label 24.72.3.cl.1
+
+// Other names and/or labels
+// Cummins-Pauli label: 12G3
+// Rouse-Sutherland-Zureick-Brown label: 24.72.3.596
+
+// Group data
+level := 24;
+// Elements that, together with Gamma(level), generate the group
+gens := [[5, 5, 20, 13], [11, 23, 14, 19], [17, 8, 10, 11], [19, 15, 12, 11]];
+// Group contains -1?
+ContainsMinus1 := true;
+// Index in Gamma(1)
+index := 72;
+
+// Curve data
+conductor := [[2, 14], [3, 6]];
+bad_primes := [2, 3];
+// Genus
+g := 3;
+// Rank
+r := 0
+;// Exact gonality known
+gamma := 4;
+
+// Modular data
+// Number of cusps
+Ncusps := 8
+;// Number of rational cusps
+Nrat_cusps := 0
+;// CM discriminants
+CM_discs := [];
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["12.36.2.z.1", "24.36.0.ca.1", "24.36.1.l.1", "24.36.1.y.1", "24.36.1.ex.1", "24.36.2.i.1", "24.36.2.m.1"];
+
+// Models for this modular curve, if computed
+Pol<x,y,z,w,t,u> := PolynomialRing(Rationals(), 6);
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Embedded model
+model_0 := [x*y+y*w+x*t,2*x^2+y*z,y*z-2*x*w+z*t,x*y-3*x*z-w*t,2*x^2+y^2-2*y*z+y*t+t^2,3*z^2+2*w^2+z*t,2*x^2-6*y^2-3*y*z-18*z^2+2*x*w+20*w^2-3*y*t+9*z*t-3*t^2+2*u^2];
+
+// Singular plane model
+model_1 := [1369*x^8-444*x^6*y^2+36*x^4*y^4+896*x^6*z^2-48*x^4*y^2*z^2+408*x^4*z^4+24*x^2*y^2*z^4+128*x^2*z^6+16*z^8];
+
+// Double cover of conic
+model_2 := [x^2+y^2+z^2,-26*x^4+24*x^3*y-64*x^3*z+40*x^2*y*z-44*x^2*z^2+40*x*y*z^2-64*x*z^3+24*y*z^3-26*z^4-9*w^2];
+
+// Maps from this modular curve, if computed
+
+// j-invariant map from the embedded model
+//   Coordinate number 0:
+map_0_coord_0 := 2^3*(7220921598792*y*t^8-38199628690524*y*t^6*u^2+30696334056882*y*t^4*u^4-4859227528047*y*t^2*u^6-448049389298*y*u^8+30719098536480*z*t^8-36330033823776*z*t^6*u^2+4559880762792*z*t^4*u^4-12026003652528*z*t^2*u^6+1329046279862*z*u^8-31431373083648*w^2*t^7+109103128267392*w^2*t^5*u^2-48963912642432*w^2*t^3*u^4-9956057056032*w^2*t*u^6+5914459254528*t^9-17316109242288*t^7*u^2+21831733508904*t^5*u^4-4165062449652*t^3*u^6-622253566002*t*u^8);
+//   Coordinate number 1:
+map_0_coord_1 := 3*(11143397529*y*t^8+13868562726*y*t^6*u^2+2466267264*y*t^4*u^4-2208448896*y*t^2*u^6-272310528*y*u^8+47406016260*z*t^8-45678337938*z*t^6*u^2+30612329472*z*t^4*u^4-2593433600*z*t^2*u^6-48505205376*w^2*t^7-269778548736*w^2*t^5*u^2-25149296640*w^2*t^3*u^4-9543835648*w^2*t*u^6+9127251936*t^9+18129548358*t^7*u^2+11570583168*t^5*u^4+347309824*t^3*u^6-596489728*t*u^8);
+
+// Map from the embedded model to the plane model of modular curve with label 24.72.3.cl.1
+//   Coordinate number 0:
+map_1_coord_0 := 1*(z);
+//   Coordinate number 1:
+map_1_coord_1 := 1*(1/3*u);
+//   Coordinate number 2:
+map_1_coord_2 := 1*(w);
+// Codomain equation:
+map_1_codomain := [1369*x^8-444*x^6*y^2+36*x^4*y^4+896*x^6*z^2-48*x^4*y^2*z^2+408*x^4*z^4+24*x^2*y^2*z^4+128*x^2*z^6+16*z^8];

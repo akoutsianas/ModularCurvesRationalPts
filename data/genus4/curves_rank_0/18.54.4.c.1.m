@@ -1,0 +1,79 @@
+
+// Modular curves downloaded from the LMFDB on 09 October 2025.
+// Magma code for modular curve with label 18.54.4.c.1
+
+// Other names and/or labels
+// Cummins-Pauli label: 18B4
+// Rouse-Sutherland-Zureick-Brown label: 18.54.4.1
+
+// Group data
+level := 18;
+// Elements that, together with Gamma(level), generate the group
+gens := [[7, 1, 11, 4], [11, 15, 9, 16]];
+// Group contains -1?
+ContainsMinus1 := true;
+// Index in Gamma(1)
+index := 54;
+
+// Curve data
+conductor := [[2, 8], [3, 14]];
+bad_primes := [2, 3];
+// Genus
+g := 4;
+// Rank
+r := 0
+;// Exact gonality known
+gamma := 2;
+
+// Modular data
+// Number of cusps
+Ncusps := 3
+;// Number of rational cusps
+Nrat_cusps := 0
+;// CM discriminants
+CM_discs := [-4];
+// Modular curve is a fiber product of the following curvesfactors := ['2.2.0.a.1', '9.27.0.b.1']
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["6.6.1.a.1", "9.27.0.b.1"];
+
+// Models for this modular curve, if computed
+Pol<x,y,z,w,t,u> := PolynomialRing(Rationals(), 6);
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Embedded model
+model_0 := [x*y*t-x*z*t+w^2*t-x*y*u+x*z*u-z*w*u,y^2*t-y*z*t-y*w*t-z*w*t-y*z*u+z^2*u+y*w*u+z*w*u,3*x*t*u+w*t*u-z*u^2,3*x*t^2+w*t^2-z*t*u,y*t*u-z*t*u-3*w*t*u-y*u^2+z*u^2,2*y*t^2-z*t^2+2*y*t*u-z*t*u-y*u^2-z*u^2,y*t^2-z*t^2-3*w*t^2-y*t*u+z*t*u,3*x*z*t+z*w*t-z^2*u,y^2*t-2*y*z*t+z^2*t-y*w*t+2*z*w*t+y*w*u+z*w*u,x*y*t-x*z*t+y*w*t-z*w*t-2*w^2*t-x*y*u+x*z*u-y*w*u,2*y*w*t-z*w*t+y^2*u-2*y*z*u+z^2*u+y*w*u+z*w*u,3*x*y*t+y*w*t-y*z*u,3*x^2*t+x*w*t-x*z*u,3*x*w*t+w^2*t-z*w*u,3*x*y^2-3*x*y*z-y^2*z+y*z^2+y^2*w+2*y*z*w,y^2*t+y*w*t+z*w*t-3*x*y*u+y^2*u-3*x*z*u+y*w*u+z*w*u,y^2*z-2*y*z^2+z^3+3*x*y*w+3*x*z*w-y*z*w+2*z^2*w+y*w^2+z*w^2,3*x*y*w-3*x*z*w-y*z*w+z^2*w+y*w^2+2*z*w^2,3*x^2*y-3*x^2*z-x*y*z+x*z^2+x*y*w+2*x*z*w,3*x*y*z-3*x*z^2-y*z^2+z^3+y*z*w+2*z^2*w,y^3-2*y^2*z+y*z^2+3*x*y*w+3*x*z*w+2*y*z*w-z^2*w-2*y*w^2-2*z*w^2,3*x*y^2-y^3+x*y*z-2*x*z^2-y*z^2-z^3-x*y*w-x*z*w-y*z*w-2*z^2*w+y*w^2+z*w^2+x*t^2+w*t^2+x*t*u-z*t*u,y^3+x*y*z+3*y^2*z+x*z^2-y*z^2+z^3+2*x*y*w+y^2*w+2*x*z*w+y*z*w-4*z*w^2-x*t^2-w*t^2-x*t*u+z*t*u+x*u^2,3*x*y^2+x*y*z+y^2*z+4*x*z^2+2*y*z^2-z^3+2*x*y*w+y^2*w+2*x*z*w+y*z*w-z^2*w+y*w^2+z*w^2+x*t^2+x*t*u,3*x^2*y-2*x*y^2+3*x^2*z+x*y*z-y^2*z-2*x*z^2-y*z^2-y^2*w-y*z*w-z^2*w-y*w^2-z*w^2-x*t^2,2*y*t*u-z*t*u-6*x*u^2+y*u^2+w*u^2,x*y*t+x*z*t+y*w*t+6*x^2*u-x*y*u-y*z*u-x*w*u,y^2*u-2*y*z*u+z^2*u+6*x*w*u+z*w*u-w^2*u,y^2*w-2*y*z*w+z^2*w+6*x*w^2+z*w^2-w^3,x*y^2-2*x*y*z+x*z^2+6*x^2*w+x*z*w-x*w^2,18*x^3-3*x^2*y-2*x*y*z+x*z^2+3*x^2*w-x*y*w-x*w^2,3*x^2*t+5*x*y*t+5*y^2*t+4*x*z*t+20*y*z*t+7*x*w*t+y*w*t+5*z*w*t+4*w^2*t+t^3-2*x*y*u+y^2*u+13*x*z*u+15*y*z*u+15*z^2*u+3*y*w*u+21*z*w*u+6*t^2*u+3*t*u^2-u^3];
+
+// Singular plane model
+model_1 := [x^9+43*x^7*y^2+6*x^8*z+174*x^6*y^2*z-3*x^7*z^2+285*x^5*y^2*z^2-33*x^6*z^3+166*x^4*y^2*z^3+15*x^5*z^4-57*x^3*y^2*z^4+60*x^4*z^5-60*x^2*y^2*z^5-45*x^3*z^6+16*x*y^2*z^6-21*x^2*z^7+24*x*z^8-4*z^9];
+
+// Weierstrass model
+model_2 := [19*x^10-110*x^9*z+171*x^8*z^2+57*x^7*z^3-321*x^6*z^4+126*x^5*z^5+165*x^4*z^6-96*x^3*z^7-45*x^2*z^8+19*x*z^9+y^2+7*z^10];
+
+// Maps from this modular curve, if computed
+
+// j-invariant map from the embedded model
+//   Coordinate number 0:
+map_0_coord_0 := 2^3*3^3*(218570983961288671008*x*z*w^4+1760164764815085934986*x*z*w^2*u^2+250231731484419063225*x*z*u^4-12237987029987281248*x*w^5-397248748183177646760*x*w^3*u^2+31501871998542261900*x*w*u^4-6005845178553837600*y*z*w^4+829911434991534129060*y*z*w^2*u^2-86128272523428781131*y*z*u^4+17329550713857272448*y*w^5-85752754353911993040*y*w^3*u^2-42125598517629765321*y*w*u^4+109362350269159365600*z^2*w^4-428484195567695867247*z^2*w^2*u^2+93052111476202252839*z^2*u^4+128261495282250962592*z*w^5-735172021890008270739*z*w^3*u^2+170889677270389599246*z*w*u^4-1255316036909429376*w^6+55246585734859807953*w^4*u^2+4728590351006050863*w^2*u^4-1862756242364579680*t^6+1238425757540264384*t^5*u+267626945897470797*t^4*u^2-6880330689131787694*t^3*u^3+19356894208635879295*t^2*u^4+9541688440625205711*t*u^5-9957426491582439844*u^6);
+//   Coordinate number 1:
+map_0_coord_1 := 1*(27321372995161083876*x*z*w^4+4443330182694444414*x*z*w^2*u^2-537764757174143163*x*z*u^4-1529748378748410156*x*w^5-2158178619377349720*x*w^3*u^2+2547735856578838845*x*w*u^4-750730647319229700*y*z*w^4+1056928164322973580*y*z*w^2*u^2-400552000627244553*y*z*u^4+2166193839232159056*y*w^5-2331468551739931002*y*w^3*u^2-255133427797434600*y*w*u^4+13670293783644920700*z^2*w^4-3603924918457452180*z^2*w^2*u^2+183586639984615584*z^2*u^4+16032686910281370324*z*w^5-7293248554168256634*z*w^3*u^2-57356685638600526*z*w*u^4-156914504613678672*w^6-315460975670593578*w^4*u^2-217095633633325365*w^2*u^4+7889467842964*t^6+84003902888248*t^5*u+555302316394344*t^4*u^2+3865485392076166*t^3*u^3+12259740188607920*t^2*u^4+5369125297512522*t*u^5-1893585545131730*u^6);
+
+// Map from the embedded model to the plane model of modular curve with label 18.54.4.c.1
+//   Coordinate number 0:
+map_1_coord_0 := 1*(t);
+//   Coordinate number 1:
+map_1_coord_1 := 1*(3*w);
+//   Coordinate number 2:
+map_1_coord_2 := 1*(u);
+// Codomain equation:
+map_1_codomain := [x^9+43*x^7*y^2+6*x^8*z+174*x^6*y^2*z-3*x^7*z^2+285*x^5*y^2*z^2-33*x^6*z^3+166*x^4*y^2*z^3+15*x^5*z^4-57*x^3*y^2*z^4+60*x^4*z^5-60*x^2*y^2*z^5-45*x^3*z^6+16*x*y^2*z^6-21*x^2*z^7+24*x*z^8-4*z^9];
+
+// Map from the embedded model to the Weierstrass model of modular curve with label 18.54.4.c.1
+//   Coordinate number 0:
+map_2_coord_0 := 1*(1/3*t^4-1/3*t^3*u-t^2*u^2+5/3*t*u^3-2/3*u^4);
+//   Coordinate number 1:
+map_2_coord_1 := 1*(-43/9*w*t^19-58/3*w*t^18*u+77/3*w*t^17*u^2+526/3*w*t^16*u^3-79/3*w*t^15*u^4-2176/3*w*t^14*u^5-142*w*t^13*u^6+5540/3*w*t^12*u^7+1589/3*w*t^11*u^8-29734/9*w*t^10*u^9-1715/3*w*t^9*u^10+12622/3*w*t^8*u^11-1429/3*w*t^7*u^12-9668/3*w*t^6*u^13+4552/3*w*t^5*u^14+864*w*t^4*u^15-2768/3*w*t^3*u^16+832/3*w*t^2*u^17-256/9*w*t*u^18);
+//   Coordinate number 2:
+map_2_coord_2 := 1*(2/3*t^4+1/3*t^3*u-2*t^2*u^2+1/3*t*u^3+2/3*u^4);
+// Codomain equation:
+map_2_codomain := [19*x^10-110*x^9*z+171*x^8*z^2+57*x^7*z^3-321*x^6*z^4+126*x^5*z^5+165*x^4*z^6-96*x^3*z^7-45*x^2*z^8+19*x*z^9+y^2+7*z^10];
