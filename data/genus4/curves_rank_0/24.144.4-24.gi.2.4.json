@@ -1,0 +1,1300 @@
+{
+  "labels": [
+    "24.144.4-24.gi.2.4",
+    "24.72.4.gi.2",
+    "24.72.4.gi.2",
+    "24.72.4.gi.2",
+    "24.72.4.gi.2"
+  ],
+  "tables": [
+    "gps_gl2zhat_fine",
+    "gps_gl2zhat_fine",
+    "modcurve_models",
+    "modcurve_modelmaps",
+    "modcurve_points"
+  ],
+  "label_cols": [
+    "label",
+    "label",
+    "modcurve",
+    "domain_label",
+    "curve_label"
+  ],
+  "timestamp": "2025-10-16T07:41:51.972640",
+  "data": [
+    [
+      {
+        "id": 83657,
+        "CPlabel": "24M4",
+        "Glabel": null,
+        "RSZBlabel": "24.144.4.3902",
+        "RZBlabel": null,
+        "SZlabel": null,
+        "Slabel": null,
+        "all_degree1_points_known": null,
+        "bad_primes": [
+          2,
+          3
+        ],
+        "canonical_conjugator": [
+          7,
+          0,
+          17,
+          23
+        ],
+        "canonical_generators": [
+          [
+            0,
+            1,
+            23,
+            18
+          ],
+          [
+            0,
+            11,
+            23,
+            20
+          ],
+          [
+            0,
+            17,
+            7,
+            18
+          ],
+          [
+            2,
+            3,
+            5,
+            16
+          ],
+          [
+            2,
+            7,
+            1,
+            16
+          ],
+          [
+            22,
+            13,
+            19,
+            8
+          ],
+          [
+            22,
+            15,
+            1,
+            20
+          ],
+          [
+            22,
+            15,
+            13,
+            8
+          ]
+        ],
+        "cm_discriminants": [],
+        "coarse_class": "24.72.4.gi",
+        "coarse_class_num": 165,
+        "coarse_index": 72,
+        "coarse_label": "24.72.4.gi.2",
+        "coarse_level": 24,
+        "coarse_num": 2,
+        "conductor": [
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "contains_negative_one": false,
+        "curve_label": null,
+        "cusp_orbits": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "cusp_widths": [
+          [
+            3,
+            2
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            24,
+            2
+          ]
+        ],
+        "cusps": 6,
+        "determinant_label": "1.1.1",
+        "dims": [
+          1,
+          2
+        ],
+        "factorization": [],
+        "fine_num": 4,
+        "generators": [
+          [
+            1,
+            4,
+            8,
+            7
+          ],
+          [
+            5,
+            23,
+            8,
+            19
+          ],
+          [
+            9,
+            11,
+            8,
+            15
+          ],
+          [
+            11,
+            5,
+            16,
+            5
+          ],
+          [
+            23,
+            20,
+            8,
+            13
+          ]
+        ],
+        "genus": 4,
+        "genus_minus_rank": 4,
+        "has_obstruction": -1,
+        "index": 144,
+        "isogeny_orbits": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            1,
+            2
+          ],
+          [
+            4,
+            4,
+            1
+          ],
+          [
+            6,
+            4,
+            1
+          ],
+          [
+            6,
+            8,
+            1
+          ],
+          [
+            8,
+            1,
+            2
+          ],
+          [
+            8,
+            2,
+            1
+          ],
+          [
+            8,
+            8,
+            1
+          ],
+          [
+            12,
+            4,
+            2
+          ],
+          [
+            12,
+            16,
+            1
+          ],
+          [
+            24,
+            4,
+            2
+          ],
+          [
+            24,
+            8,
+            1
+          ],
+          [
+            24,
+            32,
+            1
+          ]
+        ],
+        "kummer_orbits": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            1,
+            2
+          ],
+          [
+            4,
+            4,
+            1
+          ],
+          [
+            6,
+            4,
+            1
+          ],
+          [
+            6,
+            8,
+            1
+          ],
+          [
+            8,
+            2,
+            2
+          ],
+          [
+            8,
+            4,
+            1
+          ],
+          [
+            8,
+            16,
+            1
+          ],
+          [
+            12,
+            8,
+            2
+          ],
+          [
+            12,
+            32,
+            1
+          ],
+          [
+            24,
+            16,
+            2
+          ],
+          [
+            24,
+            32,
+            1
+          ],
+          [
+            24,
+            128,
+            1
+          ]
+        ],
+        "label": "24.144.4-24.gi.2.4",
+        "lattice_labels": null,
+        "lattice_x": null,
+        "level": 24,
+        "level_is_squarefree": false,
+        "level_radical": 6,
+        "log_conductor": {
+          "__RealLiteral__": 0,
+          "data": "16.29573425984789248021",
+          "prec": 77
+        },
+        "models": null,
+        "mults": [
+          2,
+          1
+        ],
+        "name": null,
+        "newforms": null,
+        "nu2": 0,
+        "nu3": 0,
+        "num_bad_primes": 2,
+        "num_known_degree1_noncm_points": 0,
+        "num_known_degree1_noncusp_points": 0,
+        "num_known_degree1_points": 1,
+        "obstructions": null,
+        "orbits": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            8,
+            1
+          ],
+          [
+            4,
+            2,
+            2
+          ],
+          [
+            4,
+            8,
+            1
+          ],
+          [
+            6,
+            8,
+            1
+          ],
+          [
+            6,
+            16,
+            1
+          ],
+          [
+            8,
+            4,
+            2
+          ],
+          [
+            8,
+            8,
+            1
+          ],
+          [
+            8,
+            32,
+            1
+          ],
+          [
+            12,
+            16,
+            2
+          ],
+          [
+            12,
+            64,
+            1
+          ],
+          [
+            24,
+            32,
+            2
+          ],
+          [
+            24,
+            64,
+            1
+          ],
+          [
+            24,
+            256,
+            1
+          ]
+        ],
+        "parents": [
+          "24.72.2-24.cj.1.24",
+          "24.72.2-24.cj.1.29"
+        ],
+        "parents_conj": null,
+        "pointless": false,
+        "power": false,
+        "psl2index": 72,
+        "psl2label": "24.72.4.e.1",
+        "psl2level": 24,
+        "q_gonality": null,
+        "q_gonality_bounds": [
+          2,
+          4
+        ],
+        "qbar_gonality": null,
+        "qbar_gonality_bounds": [
+          2,
+          4
+        ],
+        "rank": 0,
+        "rational_cusps": 2,
+        "reductions": [
+          "2.3.0.a.1",
+          "3.3.0.a.1",
+          "4.6.0.c.1",
+          "6.9.0.a.1",
+          "8.12.0.n.1",
+          "12.36.1-12.c.1.4"
+        ],
+        "scalar_label": "8.4.1",
+        "simple": false,
+        "sl2label": "24.144.4-24.e.1.2",
+        "sl2level": 24,
+        "squarefree": false,
+        "trace_hash": 812472384518940199,
+        "traces": null
+      }
+    ],
+    [
+      {
+        "id": 7399574,
+        "CPlabel": "24M4",
+        "Glabel": null,
+        "RSZBlabel": "24.72.4.386",
+        "RZBlabel": null,
+        "SZlabel": null,
+        "Slabel": null,
+        "all_degree1_points_known": null,
+        "bad_primes": [
+          2,
+          3
+        ],
+        "canonical_conjugator": [
+          7,
+          0,
+          17,
+          23
+        ],
+        "canonical_generators": [
+          [
+            0,
+            1,
+            23,
+            18
+          ],
+          [
+            0,
+            7,
+            17,
+            6
+          ],
+          [
+            0,
+            13,
+            1,
+            4
+          ],
+          [
+            0,
+            17,
+            7,
+            18
+          ],
+          [
+            2,
+            3,
+            5,
+            16
+          ],
+          [
+            2,
+            7,
+            1,
+            16
+          ],
+          [
+            2,
+            9,
+            11,
+            16
+          ],
+          [
+            2,
+            9,
+            23,
+            4
+          ],
+          [
+            2,
+            11,
+            5,
+            16
+          ]
+        ],
+        "cm_discriminants": [],
+        "coarse_class": "24.72.4.gi",
+        "coarse_class_num": 165,
+        "coarse_index": 72,
+        "coarse_label": "24.72.4.gi.2",
+        "coarse_level": 24,
+        "coarse_num": 2,
+        "conductor": [
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "contains_negative_one": true,
+        "curve_label": null,
+        "cusp_orbits": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "cusp_widths": [
+          [
+            3,
+            2
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            24,
+            2
+          ]
+        ],
+        "cusps": 6,
+        "determinant_label": "1.1.1",
+        "dims": [
+          1,
+          2
+        ],
+        "factorization": [],
+        "fine_num": 0,
+        "generators": [
+          [
+            5,
+            17,
+            8,
+            7
+          ],
+          [
+            7,
+            5,
+            8,
+            11
+          ],
+          [
+            11,
+            18,
+            0,
+            13
+          ],
+          [
+            17,
+            7,
+            8,
+            5
+          ],
+          [
+            19,
+            14,
+            8,
+            23
+          ],
+          [
+            23,
+            2,
+            8,
+            1
+          ]
+        ],
+        "genus": 4,
+        "genus_minus_rank": 4,
+        "has_obstruction": -1,
+        "index": 72,
+        "isogeny_orbits": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            1,
+            2
+          ],
+          [
+            4,
+            4,
+            1
+          ],
+          [
+            6,
+            4,
+            1
+          ],
+          [
+            6,
+            8,
+            1
+          ],
+          [
+            8,
+            1,
+            2
+          ],
+          [
+            8,
+            2,
+            1
+          ],
+          [
+            8,
+            8,
+            1
+          ],
+          [
+            12,
+            4,
+            2
+          ],
+          [
+            12,
+            16,
+            1
+          ],
+          [
+            24,
+            4,
+            2
+          ],
+          [
+            24,
+            8,
+            1
+          ],
+          [
+            24,
+            32,
+            1
+          ]
+        ],
+        "kummer_orbits": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            1,
+            2
+          ],
+          [
+            4,
+            4,
+            1
+          ],
+          [
+            6,
+            4,
+            1
+          ],
+          [
+            6,
+            8,
+            1
+          ],
+          [
+            8,
+            2,
+            2
+          ],
+          [
+            8,
+            4,
+            1
+          ],
+          [
+            8,
+            16,
+            1
+          ],
+          [
+            12,
+            8,
+            2
+          ],
+          [
+            12,
+            32,
+            1
+          ],
+          [
+            24,
+            16,
+            2
+          ],
+          [
+            24,
+            32,
+            1
+          ],
+          [
+            24,
+            128,
+            1
+          ]
+        ],
+        "label": "24.72.4.gi.2",
+        "lattice_labels": [
+          "1.1.0.a.1",
+          "2.3.0.a.1",
+          "3.3.0.a.1",
+          "4.6.0.c.1",
+          "6.9.0.a.1",
+          "8.12.0.n.1",
+          "12.18.1.c.1",
+          "24.36.2.cj.1",
+          "24.72.4.gi.2"
+        ],
+        "lattice_x": [
+          5269,
+          8011,
+          2527,
+          8011,
+          3602,
+          8011,
+          3602,
+          5807,
+          5807
+        ],
+        "level": 24,
+        "level_is_squarefree": false,
+        "level_radical": 6,
+        "log_conductor": {
+          "__RealLiteral__": 0,
+          "data": "16.29573425984789248021",
+          "prec": 77
+        },
+        "models": 2,
+        "mults": [
+          2,
+          1
+        ],
+        "name": null,
+        "newforms": [
+          "36.2.a.a",
+          "96.2.d.a"
+        ],
+        "nu2": 0,
+        "nu3": 0,
+        "num_bad_primes": 2,
+        "num_known_degree1_noncm_points": 0,
+        "num_known_degree1_noncusp_points": 0,
+        "num_known_degree1_points": 1,
+        "obstructions": [],
+        "orbits": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            8,
+            1
+          ],
+          [
+            4,
+            2,
+            2
+          ],
+          [
+            4,
+            8,
+            1
+          ],
+          [
+            6,
+            8,
+            1
+          ],
+          [
+            6,
+            16,
+            1
+          ],
+          [
+            8,
+            4,
+            2
+          ],
+          [
+            8,
+            8,
+            1
+          ],
+          [
+            8,
+            32,
+            1
+          ],
+          [
+            12,
+            16,
+            2
+          ],
+          [
+            12,
+            64,
+            1
+          ],
+          [
+            24,
+            32,
+            2
+          ],
+          [
+            24,
+            64,
+            1
+          ],
+          [
+            24,
+            256,
+            1
+          ]
+        ],
+        "parents": [
+          "24.36.2.cj.1"
+        ],
+        "parents_conj": [
+          [
+            1,
+            0,
+            0,
+            1
+          ]
+        ],
+        "pointless": false,
+        "power": false,
+        "psl2index": 72,
+        "psl2label": "24.72.4.e.1",
+        "psl2level": 24,
+        "q_gonality": null,
+        "q_gonality_bounds": [
+          2,
+          4
+        ],
+        "qbar_gonality": null,
+        "qbar_gonality_bounds": [
+          2,
+          4
+        ],
+        "rank": 0,
+        "rational_cusps": 2,
+        "reductions": [
+          "2.3.0.a.1",
+          "3.3.0.a.1",
+          "4.6.0.c.1",
+          "6.9.0.a.1",
+          "8.12.0.n.1",
+          "12.18.1.c.1"
+        ],
+        "scalar_label": "8.2.2",
+        "simple": false,
+        "sl2label": "24.72.4.e.1",
+        "sl2level": 24,
+        "squarefree": false,
+        "trace_hash": 812472384518940199,
+        "traces": [
+          0,
+          0,
+          0,
+          -4,
+          0,
+          4,
+          -4,
+          16,
+          -8,
+          0,
+          -12,
+          -20,
+          4,
+          16,
+          24,
+          0,
+          0,
+          28,
+          -32,
+          -24,
+          -32,
+          -28,
+          0,
+          -20,
+          24,
+          0,
+          52,
+          0,
+          4,
+          -12,
+          44,
+          0,
+          36,
+          -32,
+          0,
+          28,
+          28,
+          16,
+          -16,
+          0,
+          0,
+          52,
+          16,
+          -8,
+          0,
+          -76,
+          -32,
+          -84,
+          0,
+          -44,
+          28,
+          0,
+          32,
+          0,
+          36,
+          32,
+          0,
+          -20,
+          52,
+          -36,
+          64,
+          0,
+          -32,
+          16,
+          -16,
+          0,
+          64,
+          -72,
+          0,
+          28,
+          -12,
+          40,
+          -44,
+          76,
+          16,
+          -48,
+          0,
+          -68,
+          -36,
+          96,
+          0,
+          -44,
+          -24,
+          32,
+          4,
+          0,
+          60,
+          -64,
+          0,
+          92,
+          0,
+          -40,
+          12,
+          0,
+          64,
+          72,
+          0,
+          84,
+          16,
+          -92,
+          -80,
+          0,
+          0,
+          -60,
+          -32,
+          -176,
+          0,
+          -12,
+          40,
+          56,
+          44,
+          -20,
+          -4,
+          64,
+          44,
+          44,
+          -80,
+          24,
+          0,
+          0,
+          76,
+          128,
+          0,
+          0,
+          16,
+          0,
+          -44,
+          40,
+          172,
+          100,
+          -32,
+          32,
+          -108,
+          52,
+          -76,
+          24,
+          0,
+          112,
+          0,
+          -60,
+          112,
+          0,
+          -132,
+          0,
+          -92,
+          -40,
+          -116,
+          36,
+          112,
+          -48,
+          -68,
+          4,
+          16,
+          -96,
+          -80,
+          96,
+          -164,
+          -100,
+          128,
+          0,
+          0,
+          -12,
+          84,
+          0,
+          -4,
+          32,
+          84,
+          -20
+        ]
+      }
+    ],
+    [
+      {
+        "id": 13716,
+        "dont_display": false,
+        "equation": [
+          "4*x^2+y^2-3*x*z+z^2+y*w",
+          "2*x*y^2-2*x^2*z+y^2*z+z^3-2*x*y*w-z*w^2"
+        ],
+        "modcurve": "24.72.4.gi.2",
+        "model_type": 0,
+        "number_variables": 4,
+        "smooth": true,
+        "upload_id": null
+      },
+      {
+        "id": 13717,
+        "dont_display": false,
+        "equation": [
+          "8*x^4*y^2+4*x^4*z^2+8*x^3*y^2*z-4*x^2*z^4-x*y^4*z-x*y^2*z^3+y^2*z^4+z^6"
+        ],
+        "modcurve": "24.72.4.gi.2",
+        "model_type": 2,
+        "number_variables": 3,
+        "smooth": false,
+        "upload_id": null
+      }
+    ],
+    [
+      {
+        "id": 13818,
+        "codomain_label": "1.1.0.a.1",
+        "codomain_model_type": 1,
+        "coordinates": [
+          "14718992*x*y*z^9*w+948576*x*y*z^7*w^3-7524768*x*y*z^5*w^5+5567744*x*y*z^3*w^7-1566720*x*y*z*w^9+45033171*x*z^11-45413896*x*z^9*w^2+9245728*x*z^7*w^4+6992384*x*z^5*w^6-4682816*x*z^3*w^8+1052160*x*z*w^10-2022488*y^3*z^8*w-889440*y^3*z^6*w^3+3125280*y^3*z^4*w^5-2092800*y^3*z^2*w^7+522240*y^3*w^9-20940221*y^2*z^10+20360424*y^2*z^8*w^2-3397376*y^2*z^6*w^4-4335840*y^2*z^4*w^6+2603200*y^2*z^2*w^8-526080*y^2*w^10-5175217*y*z^10*w+3876016*y*z^8*w^3+1468656*y*z^6*w^5-1198592*y*z^4*w^7+259776*y*z^2*w^9-37717437*z^12+61432848*z^10*w^2-33106640*z^8*w^4+4323312*z^6*w^6+2542272*z^4*w^8-763648*z^2*w^10-256*w^12",
+          "z^2*(300*x*y*z^7*w+456*x*y*z^5*w^3+912*x*y*z^3*w^5-512*x*y*z*w^7+647*x*z^9-142*x*z^7*w^2+768*x*z^5*w^4+96*x*z^3*w^6+128*x*z*w^8+24*y^3*z^6*w-288*y^3*z^4*w^3-48*y^3*z^2*w^5-408*y^2*z^8+14*y^2*z^6*w^2-528*y^2*z^4*w^4-16*y^2*z^2*w^6-64*y^2*w^8+193*y*z^8*w-246*y*z^6*w^3+264*y*z^4*w^5-64*y*z^2*w^7-408*z^10+263*z^8*w^2-572*z^6*w^4+552*z^4*w^6-224*z^2*w^8+64*w^10)"
+        ],
+        "degree": 72,
+        "domain_label": "24.72.4.gi.2",
+        "domain_model_type": 0,
+        "dont_display": false,
+        "factored": true,
+        "leading_coefficients": [
+          "2",
+          "1"
+        ],
+        "upload_id": null
+      },
+      {
+        "id": 13819,
+        "codomain_label": "24.72.4.gi.2",
+        "codomain_model_type": 2,
+        "coordinates": [
+          "x",
+          "y-w",
+          "z"
+        ],
+        "degree": 1,
+        "domain_label": "24.72.4.gi.2",
+        "domain_model_type": 0,
+        "dont_display": false,
+        "factored": false,
+        "leading_coefficients": null,
+        "upload_id": null
+      }
+    ],
+    [
+      {
+        "id": 1723888,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": 2,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": {
+          "0": [
+            "0:0:0:1",
+            "0:-1:0:1"
+          ]
+        },
+        "curve_genus": 4,
+        "curve_index": 72,
+        "curve_label": "24.72.4.gi.2",
+        "curve_level": 24,
+        "curve_name": null,
+        "cusp": true,
+        "degree": 1,
+        "isolated": null,
+        "j_field": "1.1.1.1",
+        "j_height": 0.0,
+        "jinv": null,
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "1.1.1.1",
+        "upload_id": null
+      },
+      {
+        "id": 1723889,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": 1,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": {
+          "0": [
+            "0,0:0,1:1,0:0,0"
+          ]
+        },
+        "curve_genus": 4,
+        "curve_index": 72,
+        "curve_label": "24.72.4.gi.2",
+        "curve_level": 24,
+        "curve_name": null,
+        "cusp": true,
+        "degree": 2,
+        "isolated": null,
+        "j_field": "1.1.1.1",
+        "j_height": 0.0,
+        "jinv": null,
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "2.0.4.1",
+        "upload_id": null
+      },
+      {
+        "id": 1723890,
+        "Elabel": null,
+        "ainvs": null,
+        "cardinality": 1,
+        "cm": 0,
+        "conductor_norm": null,
+        "coordinates": {
+          "0": [
+            "0,1/2:1,0:0,0:1,0"
+          ]
+        },
+        "curve_genus": 4,
+        "curve_index": 72,
+        "curve_label": "24.72.4.gi.2",
+        "curve_level": 24,
+        "curve_name": null,
+        "cusp": true,
+        "degree": 2,
+        "isolated": null,
+        "j_field": "1.1.1.1",
+        "j_height": 0.0,
+        "jinv": null,
+        "jorig": null,
+        "quo_info": null,
+        "residue_field": "2.0.8.1",
+        "upload_id": null
+      }
+    ]
+  ]
+}
