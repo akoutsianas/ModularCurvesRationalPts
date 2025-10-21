@@ -1,0 +1,70 @@
+
+// Modular curves downloaded from the LMFDB on 17 October 2025.
+// Magma code for modular curve with label 60.96.5.m.2
+
+// Other names and/or labels
+// Cummins-Pauli label: 20D5
+// Rouse-Sutherland-Zureick-Brown label: 60.96.5.77
+
+// Group data
+level := 60;
+// Elements that, together with Gamma(level), generate the group
+gens := [[1, 0, 44, 53], [18, 53, 5, 22], [26, 35, 27, 22], [47, 37, 32, 29]];
+// Group contains -1?
+ContainsMinus1 := true;
+// Index in Gamma(1)
+index := 96;
+
+// Curve data
+conductor := [[2, 18], [3, 4], [5, 5]];
+bad_primes := [2, 3, 5];
+// Genus
+g := 5;
+// Rank
+r := 0
+;// Exact gonality known
+gamma := 4;
+
+// Modular data
+// Number of cusps
+Ncusps := 8
+;// Number of rational cusps
+Nrat_cusps := 0
+;// CM discriminants
+CM_discs := [];
+// Modular curve is a fiber product of the following curvesfactors := ['4.8.0.b.1', '15.12.0.b.2']
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["20.48.3.f.1", "60.24.1.e.1", "60.48.1.by.2", "60.48.3.co.2"];
+
+// Models for this modular curve, if computed
+Pol<x,y,z,w,t> := PolynomialRing(Rationals(), 5);
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Canonical model
+model_0 := [x^2-x*y-x*z-y*z,9*x^2+6*x*y+6*x*z-4*y^2-y*z+y*w-4*z^2-z*w-w^2-t^2,17*x^2-2*x*y-2*x*z+4*y^2+20*y*z-y*w+y*t+4*z^2+z*w-z*t+w^2-2*w*t+2*t^2];
+
+// Singular plane model
+model_1 := [13225*x^8+725*x^6*y^2+25*x^4*y^4-8400*x^6*y*z-450*x^4*y^3*z+24795*x^6*z^2+3645*x^4*y^2*z^2+30*x^2*y^4*z^2-12870*x^4*y*z^3-360*x^2*y^3*z^3+18144*x^4*z^4+1575*x^2*y^2*z^4+9*y^4*z^4-3240*x^2*y*z^5-54*y^3*z^5+2187*x^2*z^6+135*y^2*z^6-162*y*z^7+81*z^8];
+
+// Maps from this modular curve, if computed
+
+// Map from the canonical model to the canonical model of modular curve with label 60.48.3.co.2
+//   Coordinate number 0:
+map_0_coord_0 := 1*(-15*y+15*z);
+//   Coordinate number 1:
+map_0_coord_1 := 1*(11*y-11*z-7*w+t);
+//   Coordinate number 2:
+map_0_coord_2 := 1*(-y+z+2*w+4*t);
+// Codomain equation:
+map_0_codomain := [2*x^4+6*x^3*y+8*x^2*y^2+4*x*y^3+2*y^4+4*x^3*z+6*x^2*y*z-6*x*y^2*z-4*y^3*z+11*x^2*z^2-2*x*y*z^2-2*y^2*z^2-2*x*z^3-4*y*z^3+17*z^4];
+
+// Map from the canonical model to the plane model of modular curve with label 60.96.5.m.2
+//   Coordinate number 0:
+map_1_coord_0 := 1*(x);
+//   Coordinate number 1:
+map_1_coord_1 := 1*(w);
+//   Coordinate number 2:
+map_1_coord_2 := 1*(1/3*t);
+// Codomain equation:
+map_1_codomain := [13225*x^8+725*x^6*y^2+25*x^4*y^4-8400*x^6*y*z-450*x^4*y^3*z+24795*x^6*z^2+3645*x^4*y^2*z^2+30*x^2*y^4*z^2-12870*x^4*y*z^3-360*x^2*y^3*z^3+18144*x^4*z^4+1575*x^2*y^2*z^4+9*y^4*z^4-3240*x^2*y*z^5-54*y^3*z^5+2187*x^2*z^6+135*y^2*z^6-162*y*z^7+81*z^8];

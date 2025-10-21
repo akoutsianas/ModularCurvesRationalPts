@@ -1,0 +1,78 @@
+
+// Modular curves downloaded from the LMFDB on 17 October 2025.
+// Magma code for modular curve with label 58.60.5.b.1
+
+// Other names and/or labels
+// Cummins-Pauli label: 58A5
+// Rouse-Sutherland-Zureick-Brown label: 58.60.5.2
+
+// Group data
+level := 58;
+// Elements that, together with Gamma(level), generate the group
+gens := [[19, 45, 53, 6], [24, 33, 27, 22]];
+// Group contains -1?
+ContainsMinus1 := true;
+// Index in Gamma(1)
+index := 60;
+
+// Curve data
+conductor := [[2, 6], [29, 8]];
+bad_primes := [2, 29];
+// Genus
+g := 5;
+// Rank
+r := 0
+;// Exact gonality known
+gamma := 2;
+
+// Modular data
+// Number of cusps
+Ncusps := 2
+;// Number of rational cusps
+Nrat_cusps := 2
+;// CM discriminants
+CM_discs := [];
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["29.30.2.a.1", "58.2.0.a.1"];
+
+// Models for this modular curve, if computed
+Pol<x,y,z,w,t,u,v> := PolynomialRing(Rationals(), 7);
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Embedded model
+model_0 := [x*t*v-y*t*v+x*u*v,x*t^2-y*t^2+x*t*u,x*t*u-y*t*u+x*u^2,x*w*t-y*w*t+x*w*u,x*z*t-y*z*t+x*z*u,x^2*t-x*y*t+x^2*u,x*y*t-y^2*t+x*y*u,x*y*t-y^2*t-x*y*u-y^2*u+2*y*z*u-y*w*u-x*y*v+y^2*v,2*x*z*t+y*z*t-2*z^2*t+z*w*t-x*z*v,2*x*t^2+y*t^2-2*z*t^2+w*t^2-x*t*v,x*t^2-y*t^2-x*t*u-y*t*u+2*z*t*u-w*t*u+x*u*v,x^2*t+x*y*t+y^2*t-x*z*t-y*z*t+y*w*t+x^2*u-x*z*u-x*y*v,2*x^2*t+x*y*t-x*z*t-y*z*t+x*w*t+x*z*u-x^2*v,x*t*u-y*t*u-x*u^2-y*u^2+2*z*u^2-w*u^2-x*u*v+y*u*v,x*z*t-y*z*t-x*z*u-y*z*u+2*z^2*u-z*w*u-x*z*v+y*z*v,x*t*v-y*t*v-x*u*v-y*u*v+2*z*u*v-w*u*v-x*v^2+y*v^2,2*x*t*v+y*t*v-2*z*t*v+w*t*v-x*v^2,x*w*t-y*w*t-x*w*u-y*w*u+2*z*w*u-w^2*u-x*w*v+y*w*v,2*x*w*t+y*w*t-2*z*w*t+w^2*t-x*w*v,x*t^2-x*t*u-y*t*u+z*t*u+2*w*t*u-z*u^2-w*u^2+y*t*v-2*z*t*v-3*w*t*v+z*u*v-w*u*v,y^2*t-y*z*u+x*w*u+2*y*w*u+2*z*w*u-w^2*u+x^2*v-2*x*z*v+x*w*v-3*y*w*v,x*y*t-x*w*t+y*w*t-y*z*u+3*x*w*u-y*w*u+x^2*v-3*x*z*v+y*z*v-2*x*w*v-y*w*v,x*t*u+y*t*u-2*z*t*u-2*w*t*u+x*u^2+y*u^2-2*z*u^2-3*w*u^2-w*t*v-y*u*v+z*u*v+3*w*u*v,x*t*u-z*t*u-w*t*u-2*w*u^2+x*t*v-z*t*v+y*u*v-z*u*v-5*w*u*v,x^2*t-x*w*t+y*w*t-x*y*u-y^2*u+x*z*u+y*z*u+x*w*u+4*y*w*u-2*x*z*v+y*z*v-3*x*w*v+y*w*v,x^2*t-y^2*t-2*x*w*t+2*y*w*t-x*y*u+x*z*u+2*z^2*u+3*x*w*u-y*w*u+3*z*w*u-2*w^2*u-2*x^2*v+2*x*z*v+3*y*w*v,x^2*t+x*y*t-x*z*t-x*w*t+y*w*t+x*z*u-z^2*u+2*x*w*u+y*w*u-2*z*w*u-6*w^2*u-x*z*v-y*w*v,y^2*t-y*z*t-y*w*t-x*w*u+2*y*w*u-y*z*v+z^2*v-2*y*w*v+4*z*w*v+5*w^2*v,y*t^2-2*z*t*u-4*w*t*u-y*u^2+3*w*u^2+x*t*v+y*t*v-3*z*t*v-5*w*t*v-x*u*v+2*z*u*v,x^3+x^2*y-4*x^2*z+3*x*z^2-y*z^2-3*x^2*w+x*z*w+6*x*w^2-7*y*w^2,x^3+x^2*y-4*x^2*z+3*x*z^2-y*z^2-4*x^2*w+x*y*w-2*y^2*w+3*y*z*w-8*x*w^2+6*y*w^2,x^3+x^2*y+y^3-3*x^2*z-2*y^2*z+2*x*z^2+x^2*w+4*x*y*w-7*y^2*w-3*x*z*w+4*y*z*w+x*w^2-2*y*w^2,2*x^3+x^2*y+x*y^2+y^3-4*x^2*z-2*x*y*z-y^2*z+4*x*z^2-2*y*z^2+6*x^2*w-2*x*y*w-8*y^2*w+4*x*z*w-y*z*w-3*x*w^2+y*w^2,x^3+x*y^2-2*x^2*z-x*y*z-y^2*z+x*z^2+y*z^2+5*x^2*w-6*x*y*w-y^2*w-7*x*z*w+8*y*z*w-4*x*w^2+3*y*w^2,4*x^3-6*x^2*y+10*x*y^2-4*y^3+4*x^2*z-14*x*y*z+6*y^2*z-2*x^2*w+7*x*y*w-3*y^2*w+w*u^2,2*x^3-4*x^2*y+6*x*y^2+y^3+8*x^2*z-9*x*y*z-2*y^2*z-4*x*z^2+2*y*z^2-8*x^2*w-7*x*y*w-5*y^2*w-4*x*z*w+y*z*w+3*x*w^2-y*w^2-w*t*u,x*y^2-3*x*y*z-y^2*z+2*x*z^2+3*y*z^2-2*z^3+x^2*w-8*x*y*w+8*x*z*w+7*y*z*w-7*z^2*w+10*x*w^2+3*y*w^2-6*z*w^2+5*w^3,16*x^2*t-3*x*y*t+y^2*t+8*x*z*t-y*z*t+2*z^2*t-3*x*w*t+y*w*t-3*z*w*t+w^2*t-20*x^2*u+5*x*y*u-8*x*z*u+2*y*z*u-4*z^2*u+4*x*w*u-y*w*u+4*z*w*u-w^2*u+t^2*u+11*x^2*v-6*x*y*v+3*x*z*v-2*y*z*v-2*x*w*v+y*w*v,2*x^2*t+12*x*y*t-6*y^2*t+3*x*z*t+5*y*z*t+4*z^2*t-2*x*w*t-2*y*w*t-4*z*w*t+w^2*t+10*x^2*u-18*x*y*u+4*y^2*u+x*z*u-7*y*z*u-2*z^2*u+4*y*w*u+z*w*u+t^2*u+t*u^2+4*x^2*v+7*x*y*v-4*y^2*v+3*x*z*v-y*z*v-x*w*v,14*x^3+18*x^2*y-4*x*y^2+2*x^2*z-4*x*y*z-9*y^2*z+12*y*z^2-2*x^2*w+10*x*y*w+3*y^2*w-2*x*z*w-4*y*z*w+x*w^2-y*w^2-y*t*u+2*z*t*u+w*t*u+z*u^2-2*w*u^2-x*t*v+z*t*v+3*w*u*v,x*y*t+12*y^2*t+2*x*z*t+5*y*z*t+2*z^2*t-2*x*w*t-3*z*w*t+w^2*t+11*x*y*u-28*y^2*u+2*x*z*u-2*y*z*u+4*z^2*u+x*w*u-4*y*w*u-w^2*u+t^2*u+2*t*u^2+u^3-2*x^2*v+5*x*y*v+4*x*z*v+3*x*w*v+y*w*v,19*x^3-17*x^2*y+7*x*y^2-6*y^3-11*x^2*z+23*x*y*z+3*y^2*z-10*x*z^2-8*y*z^2-x^2*w-3*x*y*w-4*y^2*w-3*x*z*w+2*y*z*w+4*x*w^2+y*w^2+2*w*t*u+2*w*u^2+w*t*v-w*u*v,19*x^3-24*x^2*y-15*x*y^2+11*y^3+9*x^2*z-2*x*y*z-2*y^2*z+6*x*z^2-2*y*z^2-x^2*w+2*x*y*w-y^2*w+x*z*w+3*y*z*w-2*x*w^2-y*w^2+y*t*u-z*t*u-2*w*t*u-z*u^2+w*u^2-w*t*v-y*u*v+z*u*v+3*w*u*v,17*x^3-3*x^2*y-9*x*y^2-3*y^3+19*x^2*z+17*x*y*z-y^2*z+6*x*z^2-14*y*z^2-5*x^2*w-x*y*w+3*x*z*w+7*y*z*w-3*x*w^2+z*t*u+3*w*t*u+w*u^2+w*t*v-w*u*v,8*x^3-6*x^2*y-15*x*y^2+3*y^3-11*x^2*z-4*x*y*z+18*y^2*z-17*x*z^2-5*y*z^2-x*y*w-3*y^2*w-8*x*z*w+3*y*z*w+x*w^2+7*y*w^2-z*t*u+2*w*t*u-z*u^2+w*t*v-w*u*v,8*x^3+11*x^2*y-4*x*y^2-9*y^3+2*x^2*z+15*x*y*z+4*y^2*z-30*x*z^2+y*z^2+2*z^3-5*x^2*w-3*x*y*w-6*y^2*w+14*x*z*w+13*y*z*w+7*z^2*w-14*x*w^2-14*y*w^2+6*z*w^2-5*w^3+x*t^2-y*t^2-x*t*u-w*t*u-z*u^2+2*w*u^2+y*t*v-z*t*v+z*u*v-2*w*u*v,3*x^2*t-4*x*y*t+5*y^2*t+13*x*z*t-6*y*z*t+8*z^2*t-6*x*w*t-2*y*w*t-4*z*w*t-7*x^2*u+8*x*y*u-4*y^2*u-19*x*z*u+9*y*z*u-14*z^2*u+4*x*w*u+3*z*w*u+2*w^2*u+t^2*u-27*x^2*v+12*x*y*v+3*y^2*v-5*x*z*v-y*z*v-z^2*v-7*x*w*v-7*y*w*v-4*z*w*v-5*w^2*v-t*u*v,x^2*t+2*x*y*t-8*y^2*t+3*x*z*t+13*y*z*t+4*z^2*t-2*x*w*t-6*y*w*t-4*z*w*t+w^2*t-9*x*y*u+13*y^2*u+10*x*z*u-24*y*z*u-2*z^2*u-4*x*w*u+5*y*w*u-z*w*u+w^2*u+t^2*u+t*u^2-x^2*v-34*x*y*v+17*y^2*v+4*x*z*v-y*z*v-x*w*v+y*w*v-t*u*v-u^2*v,2*x^2*t-13*x*y*t-13*y^2*t-4*x*z*t-12*y*z*t-14*z^2*t+4*x*w*t+4*y*w*t+15*z*w*t-4*w^2*t-14*x^2*u-y^2*u-8*x*z*u-8*y*z*u+x*w*u+y*w*u-6*t^2*u-7*t*u^2-2*u^3+4*x^2*v-11*x*y*v+2*y^2*v+25*x*z*v+6*y*z*v-z^2*v-24*x*w*v-25*y*w*v-4*z*w*v-5*w^2*v-t^2*v+6*t*u*v+3*u^2*v+t*v^2-2*u*v^2,6*x^2*t+x*y*t-7*y^2*t+5*x*z*t-2*y*z*t+4*z^2*t+x*w*t-8*z*w*t+3*w^2*t-5*x^2*u-9*x*y*u-11*y^2*u-7*x*z*u-6*y*z*u-27*z^2*u-2*x*w*u+3*z*w*u-2*w^2*u-2*t^2*u-3*t*u^2-u^3+6*x^2*v-x*y*v-18*y^2*v-4*x*z*v+37*y*z*v+2*z^2*v+20*x*w*v+12*y*w*v+8*z*w*v+10*w^2*v-t^2*v+3*t*u*v+2*u^2*v+t*v^2-u*v^2,24*x^3+x^2*y-12*x*y^2-y^3+2*x*y*z+8*x*z^2-5*y*z^2+12*z^3+9*x^2*w-x*y*w+y^2*w+11*x*z*w+15*y*z*w+42*z^2*w+36*x*w^2+30*y*w^2+36*z*w^2-30*w^3+y*t^2-z*t^2+y*t*u-z*t*u-4*w*t*u,8*x^3+8*x^2*y+3*y^3+8*x^2*z-8*x*y*z+10*y^2*z-4*x^2*w+4*x*y*w-5*y^2*w-116*z^2*w+116*z*w^2-29*w^3+y*t^2+2*y*t*u+2*z*t*u+x*u^2+2*y*u^2-z*u^2-4*w*u^2-z*t*v-w*t*v+x*u*v-y*u*v-3*z*u*v-x*v^2+z*v^2+2*w*v^2,13*x^3+12*x*y^2+24*y^3+2*x^2*z-14*x*y*z-23*y^2*z-9*x*z^2-36*y*z^2+118*z^3+3*x^2*w+9*x*y*w+27*y^2*w-6*x*z*w+3*y*z*w+7*z^2*w-2*x*w^2-7*y*w^2-81*z*w^2+24*w^3-2*x*t^2+2*y*t^2+3*x*t*u+3*y*t*u+3*z*t*u-w*t*u+x*u^2+y*u^2+4*z*u^2+w*u^2+x*t*v-4*w*t*v-2*x*u*v-2*y*u*v-4*z*u*v+w*u*v-3*x*v^2+y*v^2+z*v^2+3*w*v^2,4*x^2*t-6*x*y*t-3*y^2*t-32*x*z*t-31*y*z*t-90*z^2*t-70*x*w*t-71*y*w*t-73*z*w*t+59*w^2*t+t^3-10*x^2*u+4*x*y*u+11*y^2*u+x*z*u+2*y*z*u-7*z^2*u-2*x*w*u+6*z*w*u+6*w^2*u-12*t^2*u-14*t*u^2-4*u^3-7*x^2*v-23*x*y*v-6*y^2*v+16*x*z*v+35*y*z*v-2*z^2*v-10*x*w*v-17*y*w*v-8*z*w*v-10*w^2*v-3*t^2*v+9*t*u*v+5*u^2*v+2*t*v^2-3*u*v^2,4*x^2*t+23*x*y*t+32*y^2*t+15*x*z*t+26*y*z*t+2*z^2*t-15*x*w*t-16*y*w*t-13*z*w*t+6*w^2*t+20*x^2*u+9*x*y*u+49*y^2*u+11*x*z*u+34*y*z*u+6*z^2*u-2*x*w*u-2*y*w*u+5*z*w*u-4*w^2*u+14*t^2*u+15*t*u^2+4*u^3-15*x^2*v+10*x*y*v+9*y^2*v+44*x*z*v+93*y*z*v-272*z^2*v-16*x*w*v-38*y*w*v-479*z*w*v+438*w^2*v+6*t^2*v-14*t*u*v-8*u^2*v-7*t*v^2+4*u*v^2+v^3];
+
+// Singular plane model
+model_1 := [x^8*y^2-4*x^8*y*z+8*x^8*z^2-58*x^6*y^2*z^2+87*x^6*y*z^3-87*x^6*z^4+1682*x^4*y^2*z^4+1682*x^4*y*z^5-5046*x^4*z^6-48778*x^2*y^2*z^6+73167*x^2*z^8+707281*y^2*z^8-707281*y*z^9];
+
+// Weierstrass model
+model_2 := [73*x^10*z^2-4835*x^8*z^4+x^6*y+60973*x^6*z^6+x^4*y*z^2+2652304*x^4*z^8+x^2*y*z^4-102555745*x^2*z^10+y^2+2379293284*z^12];
+
+// Maps from this modular curve, if computed
+
+// j-invariant map from the embedded model
+//   Coordinate number 0:
+map_0_coord_0 := -29*(1318503580693715*x*v^5+702571577903606016*y*w^4*v+684815698725190488*y*w^2*v^3+25599293325105408*y*u^5+14416962660131904*y*u^4*v+13807997667060144*y*u^3*v^2-2016606387998610*y*u^2*v^3+698071558981405*y*u*v^4-864718094113823*y*v^5-1400943341508372864*z*w^4*v-949629382950577032*z*w^2*v^3-29442392619159168*z*u^5-18986174573101632*z*u^4*v-12689479142434512*z*u^3*v^2+1452949796822344*z*u^2*v^3+1350735148020994*z*u*v^4-453785486579892*z*v^5-1073080305430272*w^5*t+439176616381915200*w^5*v-7680597181955712*w^3*t^2*v-341397500427945792*w^3*t*v^2-2270955713877486396*w^3*v^3-4331399887576536*w*t^2*v^3+85724596370500*w*t*v^4-178073350263817344*w*u^5-116851933572244416*w*u^4*v-43505774561485728*w*u^3*v^2+6986823720952558*w*u^2*v^3+7602896957278283*w*u*v^4-2027508061270752*w*v^5);
+//   Coordinate number 1:
+map_0_coord_1 := 1*(1054712341915*x*v^5-13234657100306688*y*w^4*v+50000279709336*y*w^2*v^3+598621795200*y*u^5-3116816425728*y*u^4*v+3756236278224*y*u^3*v^2-2194938949506*y*u^2*v^3+1617355916021*y*u*v^4-960584375143*y*v^5+25575080612754816*z*w^4*v-59210538157320*z*w^2*v^3-624304513152*z*u^5+3443073088320*z*u^4*v-4101089797776*z*u^3*v^2+1632295375400*z*u^2*v^3-656771540878*z*u*v^4-94127966772*z*v^5-2414430687218112*w^5*v-81023304868992*w^3*t^2*v+264867522872256*w^3*t*v^2-290986943396796*w^3*v^3+176999450280*w*t^2*v^3-607204660924*w*t*v^4-3981970278144*w*u^5+20578368965760*w*u^4*v-23115753519936*w*u^3*v^2+5820306788318*w*u^2*v^3+3193944573523*w*u*v^4-188418508128*w*v^5);
+
+// Map from the embedded model to the plane model of modular curve with label 58.60.5.b.1
+//   Coordinate number 0:
+map_1_coord_0 := 1*(x);
+//   Coordinate number 1:
+map_1_coord_1 := 1*(1/29*v);
+//   Coordinate number 2:
+map_1_coord_2 := 1*(1/29*t);
+// Codomain equation:
+map_1_codomain := [x^8*y^2-4*x^8*y*z+8*x^8*z^2-58*x^6*y^2*z^2+87*x^6*y*z^3-87*x^6*z^4+1682*x^4*y^2*z^4+1682*x^4*y*z^5-5046*x^4*z^6-48778*x^2*y^2*z^6+73167*x^2*z^8+707281*y^2*z^8-707281*y*z^9];
+
+// Map from the embedded model to the Weierstrass model of modular curve with label 58.60.5.b.1
+//   Coordinate number 0:
+map_2_coord_0 := 1*(-t^2);
+//   Coordinate number 1:
+map_2_coord_1 := 1*(48778*x^6*t^6-24389*x^6*t^5*v+420*x^4*t^8+841*x^4*t^7*v-15*x^2*t^10-29*x^2*t^9*v-t^12+t^11*v);
+//   Coordinate number 2:
+map_2_coord_2 := 1*(-x*t);
+// Codomain equation:
+map_2_codomain := [73*x^10*z^2-4835*x^8*z^4+x^6*y+60973*x^6*z^6+x^4*y*z^2+2652304*x^4*z^8+x^2*y*z^4-102555745*x^2*z^10+y^2+2379293284*z^12];

@@ -1,0 +1,42 @@
+
+// Modular curves downloaded from the LMFDB on 17 October 2025.
+// Magma code for modular curve with label 40.288.5-40.gx.1.7
+
+// Other names and/or labels
+// Cummins-Pauli label: 40M5
+// Rouse-Sutherland-Zureick-Brown label: 40.288.5.3787
+
+// Group data
+level := 40;
+// Elements that, together with Gamma(level), generate the group
+gens := [[1, 26, 20, 17], [1, 38, 8, 31], [5, 21, 28, 23], [35, 11, 32, 39]];
+// Group contains -1?
+ContainsMinus1 := false;
+// Index in Gamma(1)
+index := 288;
+
+// Curve data
+conductor := [[2, 19], [5, 7]];
+bad_primes := [2, 5];
+// Genus
+g := 5;
+// Rank
+r := 0
+;// Exact gonality known
+gamma := 4;
+
+// Modular data
+// Number of cusps
+Ncusps := 16
+;// Number of rational cusps
+Nrat_cusps := 0
+;// CM discriminants
+CM_discs := [];
+// Groups containing given group, corresponding to curves covered by given curve
+covers := ["40.144.1-40.s.1.5", "40.144.1-40.s.1.14", "40.144.3-40.bz.1.10", "40.144.3-40.bz.1.11", "40.144.3-40.cd.1.13", "40.144.3-40.cd.1.27"];
+
+// Models for this modular curve, if computed
+// Isomorphic to P^1?
+is_P1 := false;
+
+// Maps from this modular curve, if computed

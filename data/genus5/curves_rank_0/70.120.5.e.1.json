@@ -1,0 +1,679 @@
+{
+  "labels": [
+    "70.120.5.e.1",
+    "70.120.5.e.1",
+    "70.120.5.e.1",
+    "70.120.5.e.1"
+  ],
+  "tables": [
+    "gps_gl2zhat_fine",
+    "modcurve_models",
+    "modcurve_modelmaps",
+    "modcurve_points"
+  ],
+  "label_cols": [
+    "label",
+    "modcurve",
+    "domain_label",
+    "curve_label"
+  ],
+  "timestamp": "2025-10-21T14:00:52.196835",
+  "data": [
+    [
+      {
+        "id": 8159161,
+        "CPlabel": "10A5",
+        "Glabel": null,
+        "RSZBlabel": "70.120.5.6",
+        "RZBlabel": null,
+        "SZlabel": null,
+        "Slabel": null,
+        "all_degree1_points_known": null,
+        "bad_primes": [
+          2,
+          5,
+          7
+        ],
+        "canonical_conjugator": [
+          57,
+          14,
+          0,
+          1
+        ],
+        "canonical_generators": [
+          [
+            0,
+            1,
+            13,
+            5
+          ],
+          [
+            0,
+            1,
+            13,
+            65
+          ],
+          [
+            1,
+            0,
+            10,
+            1
+          ],
+          [
+            1,
+            10,
+            0,
+            1
+          ],
+          [
+            3,
+            3,
+            9,
+            68
+          ],
+          [
+            3,
+            9,
+            27,
+            68
+          ],
+          [
+            11,
+            10,
+            60,
+            61
+          ],
+          [
+            64,
+            35,
+            35,
+            29
+          ]
+        ],
+        "cm_discriminants": [],
+        "coarse_class": "70.120.5.e",
+        "coarse_class_num": 5,
+        "coarse_index": 120,
+        "coarse_label": "70.120.5.e.1",
+        "coarse_level": 70,
+        "coarse_num": 1,
+        "conductor": [
+          [
+            2,
+            10
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "contains_negative_one": true,
+        "curve_label": null,
+        "cusp_orbits": [
+          [
+            12,
+            1
+          ]
+        ],
+        "cusp_widths": [
+          [
+            10,
+            12
+          ]
+        ],
+        "cusps": 12,
+        "determinant_label": "1.1.1",
+        "dims": [
+          1,
+          2,
+          2
+        ],
+        "factorization": [
+          "2.2.0.a.1",
+          "35.60.0.a.1"
+        ],
+        "fine_num": 0,
+        "generators": [
+          [
+            7,
+            45,
+            5,
+            52
+          ],
+          [
+            20,
+            29,
+            37,
+            9
+          ]
+        ],
+        "genus": 5,
+        "genus_minus_rank": 5,
+        "has_obstruction": 1,
+        "index": 120,
+        "isogeny_orbits": [
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            5,
+            6,
+            1
+          ],
+          [
+            7,
+            8,
+            1
+          ],
+          [
+            10,
+            18,
+            1
+          ],
+          [
+            14,
+            24,
+            1
+          ],
+          [
+            35,
+            48,
+            1
+          ],
+          [
+            70,
+            144,
+            1
+          ]
+        ],
+        "kummer_orbits": [
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            5,
+            12,
+            1
+          ],
+          [
+            7,
+            24,
+            1
+          ],
+          [
+            10,
+            36,
+            1
+          ],
+          [
+            14,
+            72,
+            1
+          ],
+          [
+            35,
+            576,
+            1
+          ],
+          [
+            70,
+            1728,
+            1
+          ]
+        ],
+        "label": "70.120.5.e.1",
+        "lattice_labels": [
+          "1.1.0.a.1",
+          "2.2.0.a.1",
+          "5.10.0.a.1",
+          "5.20.0.a.1",
+          "10.20.0.b.1",
+          "10.20.1.a.1",
+          "10.40.1.a.1",
+          "35.60.0.a.1",
+          "70.120.5.e.1"
+        ],
+        "lattice_x": [
+          3197,
+          1395,
+          5000,
+          8606,
+          4830,
+          1531,
+          5170,
+          8435,
+          6701
+        ],
+        "level": 70,
+        "level_is_squarefree": true,
+        "level_radical": 70,
+        "log_conductor": {
+          "__RealLiteral__": 0,
+          "data": "35.37425629751476253182",
+          "prec": 77
+        },
+        "models": 1,
+        "mults": [
+          1,
+          1,
+          1
+        ],
+        "name": null,
+        "newforms": [
+          "100.2.a.a",
+          "980.2.i.i",
+          "4900.2.i.f"
+        ],
+        "nu2": 0,
+        "nu3": 0,
+        "num_bad_primes": 3,
+        "num_known_degree1_noncm_points": 0,
+        "num_known_degree1_noncusp_points": 0,
+        "num_known_degree1_points": 0,
+        "obstructions": [
+          0,
+          29
+        ],
+        "orbits": [
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            5,
+            24,
+            1
+          ],
+          [
+            7,
+            48,
+            1
+          ],
+          [
+            10,
+            72,
+            1
+          ],
+          [
+            14,
+            144,
+            1
+          ],
+          [
+            35,
+            1152,
+            1
+          ],
+          [
+            70,
+            3456,
+            1
+          ]
+        ],
+        "parents": [
+          "10.40.1.a.1",
+          "35.60.0.a.1"
+        ],
+        "parents_conj": [
+          [
+            42,
+            13,
+            57,
+            60
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ]
+        ],
+        "pointless": true,
+        "power": false,
+        "psl2index": 120,
+        "psl2label": "10.120.5.b.1",
+        "psl2level": 10,
+        "q_gonality": null,
+        "q_gonality_bounds": [
+          2,
+          4
+        ],
+        "qbar_gonality": 2,
+        "qbar_gonality_bounds": [
+          2,
+          2
+        ],
+        "rank": 0,
+        "rational_cusps": 0,
+        "reductions": [
+          "1.1.0.a.1",
+          "2.2.0.a.1",
+          "2.2.0.a.1",
+          "5.20.0.a.1",
+          "10.40.1.a.1",
+          "35.60.0.a.1"
+        ],
+        "scalar_label": "7.3.1",
+        "simple": false,
+        "sl2label": "10.120.5.b.1",
+        "sl2level": 10,
+        "squarefree": true,
+        "trace_hash": 1667484134204115615,
+        "traces": [
+          0,
+          2,
+          1,
+          -2,
+          0,
+          -2,
+          6,
+          4,
+          -6,
+          30,
+          4,
+          -2,
+          30,
+          10,
+          6,
+          6,
+          -12,
+          -2,
+          -2,
+          -60,
+          -2,
+          -8,
+          -6,
+          6,
+          -2,
+          -6,
+          -14,
+          6,
+          -2,
+          6,
+          -2,
+          0,
+          -18,
+          -20,
+          6,
+          -20,
+          22,
+          10,
+          -18,
+          6,
+          12,
+          -50,
+          12,
+          -26,
+          -18,
+          -8,
+          -80,
+          10,
+          6,
+          -14,
+          6,
+          -120,
+          -14,
+          0,
+          6,
+          18,
+          -18,
+          -20,
+          -26,
+          30,
+          -14,
+          30,
+          -2,
+          -12,
+          22,
+          6,
+          -8,
+          -2,
+          30,
+          -50,
+          -18,
+          -24,
+          22,
+          -26,
+          -140,
+          -6,
+          6,
+          -2,
+          30,
+          34,
+          180,
+          130,
+          -36,
+          -2,
+          -8,
+          -6,
+          30,
+          -26,
+          150,
+          -14,
+          30,
+          24,
+          -26,
+          0,
+          4,
+          18,
+          -6,
+          6,
+          -14,
+          -14,
+          -26,
+          30,
+          18,
+          -30,
+          -8,
+          22,
+          6,
+          -18,
+          0,
+          -50,
+          22,
+          -2,
+          6,
+          -20,
+          -140,
+          18,
+          -14,
+          -42,
+          -42,
+          180,
+          22,
+          46,
+          -18,
+          42,
+          -8,
+          -150,
+          34,
+          24,
+          46,
+          22,
+          -20,
+          -6,
+          4,
+          22,
+          -42,
+          10,
+          30,
+          -26,
+          -42,
+          6,
+          -80,
+          54,
+          -38,
+          30,
+          -2,
+          -240,
+          -50,
+          -18,
+          4,
+          -6,
+          -26,
+          -90,
+          -14,
+          -18,
+          46,
+          60,
+          16,
+          42,
+          22,
+          18,
+          -18,
+          6,
+          22,
+          24,
+          -18,
+          18,
+          4,
+          -26
+        ]
+      }
+    ],
+    [
+      {
+        "id": 110052,
+        "dont_display": false,
+        "equation": [
+          "x^2-x*y+x*z-2*y*w+w*t+2*u^2-u*v+u*s+u*a+2*u*b-a*b-c^2-u*e+c*e-e^2-b*f-u*g-b*g-d*g+e*g+f*g",
+          "3*x^2-x*y+x*z+2*x*w-y*w-2*w*t-u^2+u*v-v^2-u*r-u*s-u*b+a*b+c^2+u*d-c*e+d*e+e^2+u*f+b*f-e*f+b*g+d*g-2*e*g-2*f*g",
+          "2*x^2-2*x*w-2*y*w+x*t+w*t-u^2-u*v+v^2+u*b-a*b-2*u*c-c^2+2*u*d+c*d-d^2+d*e-b*f+d*f+e*f-b*g+c*g-d*g-e*g",
+          "x^2+x*y-x*w-x*t-u^2+v^2+u*r-u*a-u*b-a*b-u*c-b*c-c^2-u*d+u*e-b*e+e^2-b*f+2*e*f+f^2+u*g+c*g-e*g-f*g",
+          "x^2+2*x*z+2*x*w+y*w-x*t+2*w*t+u*v-u*r+u*a-u*b+a*b+u*c+b*c+c^2-u*d+c*d+u*e+b*e-2*c*e+d*e+e^2+b*f-d*f-f^2+b*g-c*g+2*d*g-e*g",
+          "x^2-x*y+3*x*z+x*w+3*y*w-3*x*t+w*t+u*r-a*b-c^2-u*d+d^2-u*e-c*e+d*e+u*f-b*f-c*g-d*g+e*g+f*g",
+          "x*w-2*x*t-2*u^2+v^2+2*u*r+u*b-2*a*b-c^2+c*d-u*e-c*e+d*e-b*f-c*f+d*f+u*g+c*g-d*g",
+          "x^2-2*x*z+x*w-y*w-x*t-2*w*t-2*u^2-u*s-u*b-2*u*c+3*u*d+b*d+c*d+b*e+c*e+u*f-e*f+b*g+c*g-e*g-f*g",
+          "2*x*z+2*x*w+2*y*w+2*x*t-w*t+u^2-u*r+u*a-2*u*b+u*d+b*d+c*d+u*e+b*e-c*e+u*f-e*f-u*g+b*g-c*g+d*g-f*g",
+          "2*x^2+2*x*y-x*t+u*b+a*b+b*c-u*d+c*d-u*e-2*c*e+d*e+b*f-c*f+2*e*f+u*g-d*g-2*e*g-f*g-g^2",
+          "2*x*z-x*w-x*t+v^2+u*r-u*b+2*a*b+2*u*c+b*c+c^2-2*u*d+2*u*e-2*c*e-d*e+e^2+2*b*f-c*f+e*f+2*d*g-f*g",
+          "x*y+x*z+y*w+x*t+2*w*t+u^2-2*u*v+v^2+u*s-u*b-b*c-2*u*d-b*d-c*d-d^2+u*e-b*e+e^2+c*f+e*f-f^2+2*u*g+2*d*g+f*g-g^2",
+          "x^2-2*x*z+x*w+x*t+2*u*v-v^2-u*r-u*s-u*b+a*b+u*c+c^2-b*d+2*u*e+c*e+e^2+c*f-d*f-e*f+f^2-2*u*g-c*g+2*d*g-f*g+g^2",
+          "x^2-2*x*y+2*x*z+2*x*w+x*t+u^2-u*r-2*u*b+u*c-b*c+c^2-u*d+b*d-c*d+d^2+u*e-c*e+e^2+c*f-d*f+a*g+b*g+d*g",
+          "x*y-x*z-3*y*w+x*t-w*t-v^2-u*a-2*u*c-b*c-c^2-b*d-c*d-d^2-b*e+c*e-e^2+u*f+b*f+c*f+e*f+u*g-d*g-2*e*g-f*g-g^2",
+          "x^2-2*x*y+x*z-2*y*w-x*t+w*t+2*u^2-u*v-u*r+u*a+2*a*b+b^2+b*c+c^2+u*d+2*b*d+c*d+b*e-c*e+u*f-2*d*f-u*g+d*g-e*g",
+          "2*x^2+x*y+x*w+2*x*t-u*r-u*b+a*b+b^2-u*c+u*d+b*d+2*u*e-b*f+2*e*f+f^2-b*g-d*g-e*g-f*g",
+          "x^2-2*x*z+y*w-x*t+2*w*t-u^2-u*v+v^2+u*a+u*b-a*b-2*u*c+b*c-c^2+u*d-b*d+c*e+d*e-b*f+d*f+e*f-f^2-a*g-d*g+f*g",
+          "x^2-x*y+x*z-x*w-3*y*w-x*t-w*t-u^2+u*v-u*c+2*u*d-d^2+u*e+c*e-d*e+a*g+b*g+2*c*g+d*g-e*g-f*g",
+          "x^2+3*x*w-y*w-2*w*t+u^2+u*v-v^2-u*r+u*s+u*a-a*b+u*c-b*c+c*e+a*f-b*f+f^2+u*g+b*g+c*g-e*g-2*f*g",
+          "x*y+2*x*z+x*w+x*t-u*v+v^2+u*s+u*a-u*b+u*c-u*d-c*d+2*u*e+a*e-c*e+e^2+b*f-c*f+d*f+e*f-f^2+u*g-a*g+d*g-e*g-f*g",
+          "x^2+2*x*y+2*y*w+x*t-w*t-u*c-c^2+u*d+a*d-u*e+d*e-a*f-b*f-c*f+d*f-a*g-d*g-e*g-f*g",
+          "3*x^2+x*y+x*z+x*w-x*t+u*v-v^2-u*r+2*a*b+u*c-a*c+b*c+c^2-u*d-d*e-u*f+b*f-c*f-d*f+d*g",
+          "x^2-x*z+2*x*w-y*w+x*t-2*w*t+u^2-u*v-v^2+u*a+u*b-a*b-u*c-c^2+u*d-b*d-d^2-2*u*e-b*e+d*e-e^2+2*u*f-s*f+d*f-e*f-c*g-d*g-e*g-f*g-g^2",
+          "x*z+3*y*w+w*t-u^2+v^2+u*r-u*b+u*c-2*u*d-a*d-b*d-c*d+2*u*e-c*e+e*f+u*g",
+          "3*x^2+x*y+2*x*w-x*t-u^2+u*v-v^2+u*b+c*d-u*e-s*e-b*e-c*e+d*e+e^2+e*f+u*g+a*g-e*g-g^2",
+          "x^2-x*y-x*z-x*w-x*t-u^2-u*a-a*b-u*c+s*c-2*c*d+d^2-b*e+2*c*e-d*e-u*f-b*f+e*f+c*g-d*g+e*g+f*g",
+          "x*y-x*w-x*t-2*u*v+v^2+u*r-s*d-a*d-u*e+u*f-e*f-b*g+e*g+f*g",
+          "2*x^2+3*x*z+2*y*w-x*t-w*t+u*r+u*a+a^2+a*b+u*c+b*c-u*d+c*d-u*e-c*e+u*f+a*f-c*f+f^2-a*g-f*g",
+          "3*x^2-2*x*y-2*x*w-2*u^2-u*a-a*b-u*c-b*c+u*d-2*c*d+d^2-u*e-b*e+c*e+d*e+e^2-b*f+c*f-s*g-b*g-d*g+f*g",
+          "x*y-3*x*z+x*w+2*u*v-v^2-u*r+u*a-s*b+a*b+u*c+b*c+c^2-u*d-s*d+c*d-u*e-c*e+d*e+e^2+b*f-c*f-d*f-a*g-c*g+d*g-2*e*g-f*g",
+          "2*x^2-x*w+u^2-v^2-u*r+s*a+u*b+a*b-c*d-u*e-b*e-a*f+a*g-b*g-d*g+f*g",
+          "x^2-x*y+x*z-2*y*w+2*x*t+w*t+u^2+u*v-v^2-2*u*r+u*s+u*a+u*b+b^2+u*c+c^2-c*d-b*e+c*e+d*e+e^2-u*f-b*f-d*f-e*f-r*g-a*g-b*g-c*g+d*g-e*g+g^2",
+          "x*w-y*w-x*t-2*w*t-u^2-u*v+u*r-u*b+a*b-b*c-c*d+u*e+c*e-d*e+r*f+b*f+d*f+u*g-a*g+c*g-f*g",
+          "2*x^2-x*y+2*x*z-u*v+v^2-u*r+u*a-u*b-2*u*c+b*c+2*u*d-s*d+c*d-d^2+u*e-r*e+e^2+u*f+d*f-e*f-f^2-u*g+b*g+2*d*g",
+          "x^2-x*z+2*x*w-3*y*w+2*x*t-w*t+u^2-u*v+u*b-a*b+u*c-u*d+s*d-2*c*d-b*e+c*e-d*e-e^2+b*f-u*g+r*g-b*g-d*g",
+          "x^2-x*y+2*x*z+x*w+2*u^2+u*a-u*b+a*b-b^2-c^2-u*d-r*d+b*d+c*d+d^2+u*e+b*e-c*e-d*e-e^2-a*f+b*f-c*f-d*f+e*f-2*u*g-a*g+b*g-c*g-f*g",
+          "x^2-2*x*w+u^2+u*r+u*b-a*b-u*c+r*c+b*c-c^2-u*d+s*d+d^2+c*e-e^2+u*f-d*f+e*f+f^2-2*u*g-b*g-c*g-2*d*g",
+          "x*z-y*w+2*x*t-2*w*t+2*u*v-v^2-2*u*r-u*b-r*b+a*b-u*c+c^2+u*d-s*d+u*e+c*e-d*e+e^2+b*f-e*f-u*g+a*g+b*g+2*d*g-f*g",
+          "2*x*y+x*z-x*w+y*w+2*w*t+u^2-u*v+v^2+u*s+u*a-r*a-2*a*b-b^2-2*u*c-b*c-2*c^2+2*c*d-a*e+b*e-c*e+d*e-e^2-b*f+c*f+d*f+2*e*f+a*g-2*d*g+e*g+f*g-g^2",
+          "x^2-x*z-x*w-3*y*w+x*t-w*t-u^2+2*u*v-v^2-u*r-u*s+r*s-2*u*c+2*u*d+s*d+a*d+u*e-a*e+c*e+b*f+c*f-u*g+a*g+b*g-e*g-f*g",
+          "x^2+u^2-u*v+v^2-u*r+r^2",
+          "2*x*z+2*x*w-2*y*w-2*x*t+w*t+u^2-u*v+u*s+u*a+a*b-u*d+u*e+b*e+b*f-f^2+v*g-a*g+d*g",
+          "2*x^2+x*y-x*z-y*w-2*w*t+u^2-u*v+v^2+u*a+u*b+b*c+2*u*d+b*d+c*d-d*e+u*f-v*f-c*f+f^2-2*u*g+a*g+c*g-f*g",
+          "2*x^2+x*z-x*w+3*y*w+w*t-u^2-u*v+v^2-u*b-a*b-b^2-u*c-b*c-c^2+c*d+u*e-v*e-c*e+d*e+e^2-b*f+d*f+e*f+u*g-a*g",
+          "2*x*y-x*z-x*t+u*d-v*d-u*e",
+          "x^2-2*x*z+x*w+3*u^2-u*r+u*a+u*b-a*b+v*c-u*d+b*d+c*d+d^2-u*e+c*e-b*f-2*d*f+f^2-2*u*g-c*g",
+          "x*y-x*w-u^2+u*v-u*b+v*b-a*b-2*u*c-c^2+u*d+s*d+u*e+b*e+c*e-e^2-b*f+e*f+b*g+c*g-d*g-e*g-f*g",
+          "x*y-2*x*z-x*w-y*w-2*w*t-u^2+u*r-u*s-v*a+u*b+2*a*b+b^2+2*u*c+b*c+2*c^2-c*d-u*e-b*e-c*e+e^2+b*f-c*f+u*g+a*g+c*g+d*g-e*g-f*g-g^2",
+          "x*z-x*w+x*t+2*u^2-u*v-u*r+u*s-v*s-u*c-b*c-c*d-b*e-u*f-a*f-b*f-r*g",
+          "2*x^2-u*v-u*r+v*r",
+          "x*y-x*z-2*x*w+2*x*t-2*u*v+v^2+u*r+u*s+s^2+u*b-2*u*c-c^2+u*d-s*d-a*d+c*d+b*e+2*c*e-d*e-e^2+d*f+s*g-b*g-d*g+2*e*g+f*g",
+          "x^2+2*x*y-2*x*z-y*w-2*y*t-2*w*t+t^2-u*v+v^2+u*r-a*b-u*c-b*c-c^2+u*d+c*d-d^2+c*e+u*f-b*f+f^2+2*c*g-e*g-2*f*g",
+          "2*x^2-2*x*y+x*w-2*x*t+y*t+2*t^2+2*u^2-v^2-u*r+u*a+u*b+a*b+u*c+c^2+u*d-2*u*e+b*e+d*e+u*f+2*c*f-2*d*f-2*e*f-f^2-u*g+a*g+f*g",
+          "x*u-2*t*u+t*r-x*s+x*b-x*c+2*x*d-x*e+x*f-2*x*g",
+          "t*u-x*v+t*v-w*r-t*r-x*a-t*b-t*c-x*d-w*d-y*e+w*f-t*f+x*g+w*g",
+          "t*u+w*r+x*s+x*a-x*b+w*c+t*c-x*d+w*d+x*e-w*e+2*t*e+w*f+t*g",
+          "x*u-2*t*u-w*v+t*v+w*r+x*b+x*c-x*d-x*f",
+          "x*u+t*u-x*v-x*r+t*r+t*s-x*b+t*b-2*x*c+2*t*c-x*d+2*y*d-t*d-x*e+y*e-t*e+x*f-x*g+t*g",
+          "x*u+t*u-t*r+x*s-t*s+2*x*a-t*b+x*c-x*d-y*d+w*d+2*x*e-2*y*e+t*e-x*f-w*f+2*t*f-w*g-t*g",
+          "x*u+w*v-w*r+t*r+x*s-2*t*s+x*a-w*a-x*b-w*b-t*b-x*c+t*c+x*d+t*d-x*e-w*e+t*e+x*f+t*f-x*g-w*g",
+          "t*u-x*v-w*r-t*r+x*s-t*s+x*a-w*a-t*a-2*t*b-x*c-2*w*c+x*e+x*f+x*g",
+          "w*u-t*u+x*v+w*v-w*r+t*r-x*s+w*c-t*c+x*d-y*d+x*e-2*y*e-x*g+z*g",
+          "x*u+t*u-x*v+t*a-x*b-w*b+t*b-x*c+w*c+t*c+x*d+y*d-x*e-y*e+z*e+x*f-x*g",
+          "x*r-t*r-t*s-t*b-x*c+w*c-t*c+x*d-y*d-w*d+t*d-z*e-w*e+t*e+x*f+w*f-x*g",
+          "x*u+t*u-x*v-w*v+t*v-x*r-w*r+x*s-w*c+t*c-2*x*d-z*d-x*e+y*e-x*f+x*g",
+          "x*u+w*u+t*v-x*r-w*r+x*c+w*c-t*c-x*d+z*d-y*e-x*f",
+          "x*u-t*u+z*r+x*s-t*s+x*a-w*a-t*a-t*b-w*c+z*d+w*d-w*f+t*f-w*g",
+          "x*u-w*u-t*u+z*v+w*r-x*c+x*f-x*g",
+          "z*v-z*r-t*r+x*s+w*s-t*s+x*a-t*b-w*c+z*d+x*e-z*e-w*f+t*f+x*g-t*g",
+          "2*x*u-t*u-x*v+x*a+x*b-t*b-w*c+x*d-y*d+z*d+t*e+x*f+w*g-t*g",
+          "w*u-t*v+x*r+w*r-t*r+x*b-t*b+x*c-t*c-w*d+x*e-y*e+w*f-t*f+x*g+w*g",
+          "x*u+w*v-t*v-x*c+x*d+y*d+z*d-x*e-z*e-t*e-z*f-w*f+t*f-x*g+z*g-w*g",
+          "x*u-t*u-x*v-w*v+t*v-x*a-x*c-z*c+y*d+z*d-t*d-x*e+y*e+w*e-t*e",
+          "t*u-z*v-t*r+x*a+w*a-t*a-z*c+w*c-t*c+2*x*e-y*e+w*e-t*g",
+          "x*u+t*u-t*r+t*s+w*a+t*a+x*b+x*c-z*c+w*c-t*c-y*d-w*d+t*d+x*e-y*e+z*e-x*f+z*g-t*g",
+          "2*x*u+w*u+t*u-x*v-w*v-t*r-z*b+t*b+w*c-x*d-t*d-y*e+w*e-t*e-x*f-z*f-x*g",
+          "2*t*u+w*v-t*v-w*r+x*s-t*s-x*b-z*b-t*b-z*c-x*d-y*d-z*d+t*d-y*e-w*e+t*e-x*f+t*f-w*g",
+          "t*u+x*v-z*s+t*b+w*c-x*d-z*d-z*e-x*f",
+          "w*v+t*v-w*r-z*s+z*b-t*b+x*c-t*c-y*d+z*d+t*d+x*e-2*y*e+z*e-w*e+t*e+x*g",
+          "w*s+x*a-z*a-x*c-z*c+t*c+x*d+2*x*e-y*e+x*f-w*f+t*f-x*g-t*g",
+          "t*u+z*r-w*r-x*s+t*s+z*a+t*b-x*c+x*d+z*e+w*e-t*e-w*f-x*g-t*g",
+          "x*u+t*v-w*r-t*r-t*s+x*b-z*b-2*t*b+x*c-t*c-x*d+y*d-w*d+w*e-t*e-x*f+t*f-w*g-t*g",
+          "z*u+w*u-t*u-t*v+x*r+w*r-x*b+x*e+x*f+x*g",
+          "x*y-2*x*z-y*w+x*t-y*t+z*t+w*t+u*v-v^2-u*r+a*b-u*c+u*d-b*d-d^2+u*e+b*e+2*c*e-e^2+c*f-d*f-e*g",
+          "w*u+t*u-x*r-w*r-x*b-x*d-w*d+t*d+y*e-w*e+x*g-y*g",
+          "2*x*u-x*r+t*r+x*s+x*a+t*c-x*d+y*d-x*e+2*y*e+y*f",
+          "w*v-t*v-2*x*s-w*s+t*s-x*a+t*a-x*c+y*c-t*c+x*d-w*d-y*e-t*e+x*f-x*g",
+          "w*u-2*t*u-z*v-w*v+w*r+t*r-x*s-w*s+t*s-w*a+y*b+t*b+y*d+z*d-t*d+y*e-t*e+x*f+z*f-t*f+w*g+t*g",
+          "x*u-t*u+z*r-w*a-t*a-z*b-w*b-t*b-x*c-z*c-w*c+z*d-w*d-t*e+x*f+z*f+w*f-t*f-x*g+t*g",
+          "x*u+w*u-t*u-w*v+t*v+w*s+x*a-y*a+x*b+w*b+w*c-y*d+x*e-y*e-w*e+t*e-x*g+w*g",
+          "w*u+z*v-t*v+y*r-x*b-x*c+x*d+x*f",
+          "t*u-y*v+w*v-t*v+x*a+w*a-t*a-x*b-z*b+w*d-t*d+2*x*e-2*y*e+z*e+w*e+x*f",
+          "x*u-y*u-w*v+w*r-t*r+x*a+x*b+x*e-x*g",
+          "x^2-3*x*z+y*z-x*w-w*t+t^2-2*u^2-u*v+v^2-u*s+a*b-u*c+b*c+c^2+2*u*d+e^2+b*f+d*f-f^2+c*g",
+          "x^2-y^2-x*w-x*t-t^2+u^2+u*v-v^2-u*r-u*s+a*b-u*c+b*c+u*d+c*d+u*f-d*f+f^2-2*u*g+b*g-c*g+d*g-e*g-f*g",
+          "x*v-x*r-w*r-x*s+y*s-w*s+t*a+x*c-t*c+x*d-y*d+w*d+z*e+w*e-x*f-w*f+t*f+z*g-w*g-t*g",
+          "x*y+z^2+x*w+y*w+w^2-x*t+t^2-b^2+c*d-u*e+2*b*e-c*e+d*e-e^2+b*f+c*f-d*f-f^2+u*g+a*g+b*g-d*g-e*g+f*g-g^2",
+          "x^2+x*y-x*z-z^2+2*x*w-2*y*w-z*w+w^2-2*x*t+w*t-t^2-v^2+u*b-u*d+c*d-u*e+d*e-d*f+u*g-c*g+d*g-e*g+f*g-g^2",
+          "2*x^2+x*z+z^2-x*w-2*z*w+x*t-w*t+t^2-u*v-v^2-u*r+u*b-u*c-b*c+2*u*d-d^2-3*u*e+2*d*e+u*f+c*f-2*e*f-f^2+u*g-a*g-b*g-d*g-2*e*g"
+        ],
+        "modcurve": "70.120.5.e.1",
+        "model_type": 8,
+        "number_variables": 16,
+        "smooth": true,
+        "upload_id": null
+      }
+    ],
+    [
+      {
+        "id": 108945,
+        "codomain_label": "1.1.0.a.1",
+        "codomain_model_type": 1,
+        "coordinates": [
+          "4610322445737920289682240*u*f^5-27953488850019107095785360*u*f^4*g-15978457760946406857808000*u*f^3*g^2+18988981850426439524945920*u*f^2*g^3+1612172500569796593254400*u*f*g^4-904219911793854715396096*u*g^5-5373417103096339308006781*v*f^5+18392221817298815790820720*v*f^4*g+27732658214299161346016000*v*f^3*g^2-10228642523666584840867840*v*f^2*g^3-7868000014568295890616320*v*f*g^4+315787120026336464470016*v*g^5-6845229397433137907056887*r*f^5-5547907769562843122396700*r*f^4*g+25433683960811345792435520*r*f^3*g^2+4201384633701324259968000*r*f^2*g^3-4603615171937251931750400*r*f*g^4-184520857175582487478272*r*g^5-7570553963728782513392394*s*f^5-7021352855721667952303470*s*f^4*g+17090480229566109141312320*s*f^3*g^2-418882245825058377438720*s*f^2*g^3-2013453527020001529364480*s*f*g^4+346369408438576821567488*s*g^5-2942407470206445373183927*a*f^5-2026802846233362853222580*a*f^4*g+997227977686085945238080*a*f^3*g^2-2266431892978599610516480*a*f^2*g^3+775310827995155620003840*a*f*g^4+312980209826545276289024*a*g^5-4513828133698988368470095*b*f^5-32351560712462000940466625*b*f^4*g+5955769976460700085406720*b*f^3*g^2+33554709085643798037195520*b*f^2*g^3+127877799619815188807680*b*f*g^4-1796925889444879791882240*b*g^5-6860352037334436574825876*c*f^5-12263658811116612774191695*c*f^4*g+32448948350129707093355520*c*f^3*g^2+7425226519333131817698560*c*f^2*g^3-9165536673933424000122880*c*f*g^4-140808654090829584334848*c*g^5-623937989944720656164234*d*f^5+18757271555165084666075920*d*f^4*g-3800991577750240157743680*d*f^3*g^2-4270416521944563009105920*d*f^2*g^3+2382565951464470127738880*d*f*g^4-353215986042733653000192*d*g^5-4906755573878951322254363*e*f^5+10910724292563692275770210*e*f^4*g+25369196842229036545805120*e*f^3*g^2-9169769423352226478835200*e*f^2*g^3-6777404405781765722603520*e*f*g^4+359338897181782476455936*e*g^5+4636353296252273035930006*f^6+5831949308383732408817158*f^5*g-14234030295975257940524155*f^4*g^2+2693162389669588891647360*f^3*g^3-13271595577746690735998720*f^2*g^4-2950399493425705674883072*f*g^5+1630066714979147887345664*g^6",
+          "125214142139306437926464*u*f^5-331939687192523431454544*u*f^4*g-120346283641002500510336*u*f^3*g^2+151198550968685507932160*u*f^2*g^3-46009716947745343340544*u*f*g^4-18258185066941302308864*u*g^5-144931791442528426567529*v*f^5+226153510924049436076016*v*f^4*g+274686153559918928976640*v*f^3*g^2-94455948649855944544256*v*f^2*g^3-14144652509856982564864*v*f*g^4+9995634351711266013184*v*g^5-127507181879539470900411*r*f^5-137242891965618856823148*r*f^4*g+240354591420189274788672*r*f^3*g^2+23867978920190325236736*r*f^2*g^3+2428115190536819146752*r*f*g^4+2945925129107107086336*r*g^5-146115201360393163379874*s*f^5-92429020204826811389558*s*f^4*g+137424672791971018363840*s*f^3*g^2-10283435735037551734272*s*f^2*g^3-25359134831352862343168*s*f*g^4-3047558762622938513408*s*g^5-64610628516759741341819*a*f^5+17042546638537159193948*a*f^4*g+8406059445808086305344*a*f^3*g^2-31628702025901674447872*a*f^2*g^3+2560983311593210216448*a*f*g^4-5745642444186053771264*a*g^5-63973916234658474129331*b*f^5-452775194963387914114909*b*f^4*g-17386048738378518429888*b*f^3*g^2+210053628277384156335872*b*f^2*g^3-11491286063145570156544*b*f*g^4-13426702289055444172800*b*g^5-122548453518727669453508*c*f^5-185221216164985378394291*c*f^4*g+281617116775546928962752*c*f^3*g^2+65323889809339451302144*c*f^2*g^3-36960129455252834533376*c*f*g^4-6199794190467570794496*c*g^5-52180882654046430442786*d*f^5+236221671919943987520848*d*f^4*g-52106838901316849302848*d*f^3*g^2-43121446912123213127680*d*f^2*g^3+18496928614381525434368*d*f*g^4-5666088583838007164928*d*g^5-118670780349388896013519*e*f^5+112083134237196494036058*e*f^4*g+311626080165226852001728*e*f^3*g^2-89580709098059967602176*e*f^2*g^3-30642789081202167447552*e*f*g^4+7690511085375748440064*e*g^5+89191975240459640056190*f^6+98190745392912696481454*f^5*g-46461608197752849335087*f^4*g^2+67242126885919783937856*f^3*g^3-107661725419287786183424*f^2*g^4-1856418866544454320128*f*g^5+11017808771377388781568*g^6"
+        ],
+        "degree": 120,
+        "domain_label": "70.120.5.e.1",
+        "domain_model_type": 8,
+        "dont_display": false,
+        "factored": true,
+        "leading_coefficients": [
+          "5^2*7",
+          "1"
+        ],
+        "upload_id": null
+      }
+    ],
+    []
+  ]
+}

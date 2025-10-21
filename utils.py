@@ -73,7 +73,7 @@ def collect_curves_data(genus, rank, file_type='json'):
     curves_labels = curves_list.loc[~curves_list['label'].isin(known_labels)]['label']
     for label in curves_labels:
         url_curve = curve_url.format(curve_label=label)
-        response = session.get(url_curve)
+        response = session.get(url_curve, timeout=30)
         response.raise_for_status()
         save_path = os.path.join(curves_path, f'{label}.{file_extension}')
         with open(save_path, 'w', encoding='utf-8') as file:
