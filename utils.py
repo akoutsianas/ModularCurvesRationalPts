@@ -1,12 +1,12 @@
 import os
+import urllib.parse
 import requests
 import pandas as pd
 
 
-db_list_url = ("https://beta.lmfdb.org/ModularCurve/Q/"
-       "?download=1&query=%7B%27genus%27%3A+{genus}%2C+%27rank%27%3A+{rank}%7D&count=None&"
-       "showcol=RSZBlabel.RZBlabel.CPlabel.SZlabel.Slabel.conductor.simple.squarefree."
-       "contains_negative_one.dims.models.num_known_degree1_points.pointless.generators&Submit=csv")
+db_list_base_url = "https://beta.lmfdb.org/ModularCurve/Q/"
+db_list_showcol = ("RSZBlabel.RZBlabel.CPlabel.SZlabel.Slabel.conductor.simple.squarefree."
+                   "contains_negative_one.dims.models.num_known_degree1_points.pointless.generators")
 # curve_url = "https://beta.lmfdb.org/ModularCurve/data/{curve_label}?_format=json"
 file_type_dict = {
     'magma': {
@@ -32,7 +32,33 @@ def collect_list_of_curves(genus, rank):
         'Upgrade-Insecure-Requests': '1'
     })
     session.cookies.set('human', '1', domain='beta.lmfdb.org', path='/')
-    url_labels_list = db_list_url.format(genus=genus, rank=rank)
+    # Filters applied (matching LMFDB's search form):
+    #   - Exclude the X0(N) family (/ModularCurve/Q/family/X0):
+    #       name LIKE 'X0(%' OR name IN ('X(1)', 'X0(2)')
+    #   - Exclude the X1(N) family (/ModularCurve/Q/family/X1):
+    #       (name LIKE 'X1(%' AND name NOT LIKE '%,%') OR name IN ('X(1)', 'X0(2)')
+    #   - Exclude curves with a known local obstruction (pointless=True);
+    #     keep pointless=False or NULL (LMFDB's "No known obstruction" option).
+    # NULL names are retained.
+    query = (
+        f"{{'genus': {genus}, 'rank': {rank}, "
+        "'$and': ["
+        "{'$or': [{'name': None}, {'$and': ["
+        "{'name': {'$not': {'$like': 'X0(%'}}}, "
+        "{'$or': [{'name': {'$not': {'$like': 'X1(%'}}}, "
+        "{'name': {'$like': '%,%'}}]}, "
+        "{'name': {'$nin': ['X(1)', 'X0(2)']}}]}]}, "
+        "{'$or': [{'pointless': None}, {'pointless': False}]}"
+        "]}"
+    )
+    params = {
+        'download': '1',
+        'query': query,
+        'count': 'None',
+        'showcol': db_list_showcol,
+        'Submit': 'csv',
+    }
+    url_labels_list = db_list_base_url + '?' + urllib.parse.urlencode(params)
     response = session.get(url_labels_list)
     response.raise_for_status()
 
