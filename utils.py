@@ -1,24 +1,16 @@
+import json
+import pandas as pd
 import os
 import re
 import urllib.parse
+
 import requests
-import pandas as pd
 
 
 db_list_base_url = "https://beta.lmfdb.org/ModularCurve/Q/"
 db_list_showcol = ("RSZBlabel.RZBlabel.CPlabel.SZlabel.Slabel.conductor.simple.squarefree."
                    "contains_negative_one.dims.models.num_known_degree1_points.pointless.generators")
-# curve_url = "https://beta.lmfdb.org/ModularCurve/data/{curve_label}?_format=json"
-file_type_dict = {
-    'magma': {
-        'file_extension': 'm',  'split_size': 2,
-        'curve_url': "https://beta.lmfdb.org/ModularCurve/download_to_magma/{curve_label}"
-    },
-    'json': {
-        'file_extension': 'json', 'split_size': 5,
-        'curve_url': "https://beta.lmfdb.org/ModularCurve/data/{curve_label}?_format=json"
-    }
-}
+curve_data_url = "https://beta.lmfdb.org/ModularCurve/data/{curve_label}?_format=json"
 
 
 def collect_list_of_curves(genus, rank, mayle_rouse_path='./data/mayle_rouse_curves_list.txt'):
@@ -95,7 +87,76 @@ def extract_labels_covered_by_mayle_rouse_work(allpointscounts_path='./data/allp
     return labels
 
 
-def collect_curves_data(genus, rank, file_type='json'):
+def _summarize_curve_json(d):
+    tables = d.get('tables', [])
+    data = d.get('data', [])
+    sections = {t: data[i] for i, t in enumerate(tables) if i < len(data)}
+
+    info = (sections.get('gps_gl2zhat_fine') or [{}])[0]
+    models = sections.get('modcurve_models', [])
+    points = sections.get('modcurve_points', [])
+
+    gon_bounds = info.get('q_gonality_bounds') or [None, None]
+    is_hyperelliptic = (gon_bounds[0] == 2 and gon_bounds[1] == 2)
+
+    # model_type=0 (smooth canonical in P^{g-1}) for non-hyperelliptic curves;
+    # model_type=8 (embedded model in P^n) for hyperelliptic curves;
+    # model_type=5 is the Weierstrass model (hyperelliptic only).
+    embedded = next((m for m in models if m.get('model_type') == 0), None) \
+               or next((m for m in models if m.get('model_type') == 8), None)
+    weierstrass = next((m for m in models if m.get('model_type') == 5), None) if is_hyperelliptic else None
+
+    def model_summary(m):
+        if not m:
+            return None
+        return {
+            'model_type': m.get('model_type'),
+            'equation': m.get('equation'),
+            'number_variables': m.get('number_variables'),
+            'smooth': m.get('smooth'),
+        }
+
+    weierstrass_summary = model_summary(weierstrass)
+    # For hyperelliptic curves with a Weierstrass model, expose the affine form
+    # y^2 + h(x)*y = f(x) by setting z=1 in the homogeneous equation. Requires Sage.
+    if weierstrass_summary and weierstrass_summary.get('equation'):
+        from sage.all import PolynomialRing, QQ
+        R = PolynomialRing(QQ, ['x', 'y', 'z'])
+        z_var = R.gens()[2]
+        S = PolynomialRing(QQ, 'x')
+        T = PolynomialRing(S, 'y')
+        p = R(weierstrass_summary['equation'][0])
+        coeffs = T(p.subs({z_var: 1})).list()  # ascending in y
+        a0 = coeffs[0] if len(coeffs) > 0 else S(0)
+        a1 = coeffs[1] if len(coeffs) > 1 else S(0)
+        a2 = coeffs[2] if len(coeffs) > 2 else S(0)
+        # a2*y^2 + a1*y + a0 = 0  <=>  y^2 + (a1/a2)*y = -(a0/a2)
+        weierstrass_summary = str([a1 / a2, -a0 / a2])
+
+    return {
+        'label': info.get('label'),
+        'genus': info.get('genus'),
+        'analytic_rank': info.get('rank'),
+        'q_gonality_bounds': gon_bounds,
+        'is_hyperelliptic': is_hyperelliptic,
+        'embedded_model': model_summary(embedded),
+        'weierstrass_model': weierstrass_summary,
+        'known_rational_points': [
+            {
+                'coordinates': p.get('coordinates'),
+                'cusp': p.get('cusp'),
+                'jinv': p.get('jinv'),
+                'jorig': p.get('jorig'),
+                'residue_field': p.get('residue_field'),
+                'cm': p.get('cm'),
+                'isolated': p.get('isolated'),
+            }
+            for p in points if p.get('degree') == 1
+        ],
+    }
+
+
+def collect_curves_data(genus, rank):
     data_path = f'./data/genus{genus}'
     curves_path = data_path + f'/curves_rank_{rank}'
     os.makedirs(curves_path, exist_ok=True)
@@ -114,16 +175,14 @@ def collect_curves_data(genus, rank, file_type='json'):
     })
     session.cookies.set('human', '1', domain='beta.lmfdb.org', path='/')
     files = os.listdir(curves_path)
-    split_size = file_type_dict[file_type]['split_size']
-    curve_url = file_type_dict[file_type]['curve_url']
-    file_extension = file_type_dict[file_type]['file_extension']
-    known_labels = [f[:-split_size] for f in files if os.path.isfile(os.path.join(curves_path, f))]
+    known_labels = [f[:-5] for f in files if f.endswith('.json')]
     curves_labels = curves_list.loc[~curves_list['label'].isin(known_labels)]['label']
     for label in curves_labels:
-        url_curve = curve_url.format(curve_label=label)
+        url_curve = curve_data_url.format(curve_label=label)
         response = session.get(url_curve, timeout=30)
         response.raise_for_status()
-        save_path = os.path.join(curves_path, f'{label}.{file_extension}')
+        summary = _summarize_curve_json(response.json())
+        save_path = os.path.join(curves_path, f'{label}.json')
         with open(save_path, 'w', encoding='utf-8') as file:
-            file.write(response.text)
+            json.dump(summary, file, indent=2)
 
