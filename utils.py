@@ -1,4 +1,5 @@
 import os
+import re
 import urllib.parse
 import requests
 import pandas as pd
@@ -20,7 +21,7 @@ file_type_dict = {
 }
 
 
-def collect_list_of_curves(genus, rank):
+def collect_list_of_curves(genus, rank, mayle_rouse_path='./data/mayle_rouse_curves_list.txt'):
     session = requests.Session()
     session.headers.update({
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -66,11 +67,32 @@ def collect_list_of_curves(genus, rank):
         print("ERROR: Still receiving HTML instead of CSV!")
         print("The website might require additional steps or manual download.")
     else:
+        mr_labels = set()
+        if os.path.exists(mayle_rouse_path):
+            with open(mayle_rouse_path, 'r', encoding='utf-8') as f:
+                mr_labels = set(re.findall(r'"([^"]+)"', f.read()))
+
+        lines = response.text.strip().splitlines()
+        if mr_labels:
+            # We filter we respect to Mayle-Rouse curves list
+            lines = [lines[0]] + [l for l in lines[1:] if l.split(',')[0] not in mr_labels]
+
         data_path = f'./data/genus{genus}'
         os.makedirs(data_path, exist_ok=True)
         save_path = os.path.join(data_path, f'rank_{rank}.csv')
         with open(save_path, 'w', encoding='utf-8') as file:
-            file.write(response.text)
+            file.write('\n'.join(lines) + '\n')
+
+
+def extract_labels_covered_by_mayle_rouse_work(allpointscounts_path='./data/allpointcounts.txt',
+                                        output_path='./data/mayle_rouse_curves_list.txt'):
+    with open(allpointscounts_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    labels = re.findall(r'<"([^"]+)"', content)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        items = ', '.join(f'"{label}"' for label in labels)
+        f.write(f'mayle_rouse_curves_list = [{items}]\n')
+    return labels
 
 
 def collect_curves_data(genus, rank, file_type='json'):
