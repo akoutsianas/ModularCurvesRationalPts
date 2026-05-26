@@ -131,11 +131,14 @@ def _summarize_curve_json(d):
         a1 = coeffs[1] if len(coeffs) > 1 else S(0)
         a2 = coeffs[2] if len(coeffs) > 2 else S(0)
         # a2*y^2 + a1*y + a0 = 0  <=>  y^2 + (a1/a2)*y = -(a0/a2)
-        weierstrass_summary = str([a1 / a2, -a0 / a2])
+        weierstrass_summary['equation'] = str([a1 / a2, -a0 / a2])
+
+    newforms_decomp = sorted(set(zip(info.get('mults', []) or [], info.get('newforms', []) or [])))
 
     return {
         'label': info.get('label'),
         'genus': info.get('genus'),
+        'newforms_decomp': newforms_decomp,
         'analytic_rank': info.get('rank'),
         'q_gonality_bounds': gon_bounds,
         'is_hyperelliptic': is_hyperelliptic,
@@ -174,14 +177,27 @@ def collect_curves_data(genus, rank):
         'Upgrade-Insecure-Requests': '1'
     })
     session.cookies.set('human', '1', domain='beta.lmfdb.org', path='/')
-    files = os.listdir(curves_path)
-    known_labels = [f[:-5] for f in files if f.endswith('.json')]
-    curves_labels = curves_list.loc[~curves_list['label'].isin(known_labels)]['label']
-    for label in curves_labels:
+
+    # Seed covered from existing JSON files so resuming and deduplication both work.
+    covered = set()
+    for fname in os.listdir(curves_path):
+        if not fname.endswith('.json'):
+            continue
+        with open(os.path.join(curves_path, fname)) as f:
+            existing = json.load(f)
+        if existing.get('newforms_decomp'):
+            covered.add(frozenset(tuple(x) for x in existing['newforms_decomp']))
+
+    for _, row in curves_list.iterrows():
+        label = row['label']
         url_curve = curve_data_url.format(curve_label=label)
         response = session.get(url_curve, timeout=30)
         response.raise_for_status()
         summary = _summarize_curve_json(response.json())
+        newforms_decomp = frozenset(tuple(x) for x in summary['newforms_decomp'])
+        if newforms_decomp in covered:
+            continue
+        covered.add(newforms_decomp)
         save_path = os.path.join(curves_path, f'{label}.json')
         with open(save_path, 'w', encoding='utf-8') as file:
             json.dump(summary, file, indent=2)
