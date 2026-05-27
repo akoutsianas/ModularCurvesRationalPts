@@ -32,9 +32,10 @@ def collect_list_of_curves(genus, rank, mayle_rouse_path='./data/mayle_rouse_cur
     #       (name LIKE 'X1(%' AND name NOT LIKE '%,%') OR name IN ('X(1)', 'X0(2)')
     #   - Exclude curves with a known local obstruction (pointless=True);
     #     keep pointless=False or NULL (LMFDB's "No known obstruction" option).
+    #   - Keep only curves whose subgroup contains -I (contains_negative_one=True).
     # NULL names are retained.
     query = (
-        f"{{'genus': {genus}, 'rank': {rank}, "
+        f"{{'genus': {genus}, 'rank': {rank}, 'contains_negative_one': True, "
         "'$and': ["
         "{'$or': [{'name': None}, {'$and': ["
         "{'name': {'$not': {'$like': 'X0(%'}}}, "
@@ -68,10 +69,9 @@ def collect_list_of_curves(genus, rank, mayle_rouse_path='./data/mayle_rouse_cur
         if mr_labels:
             # We filter we respect to Mayle-Rouse curves list
             lines = [lines[0]] + [l for l in lines[1:] if l.split(',')[0] not in mr_labels]
-
         data_path = f'./data/genus{genus}'
         os.makedirs(data_path, exist_ok=True)
-        save_path = os.path.join(data_path, f'rank_{rank}.csv')
+        save_path = os.path.join(data_path, f'curves_label_rank_{rank}.csv')
         with open(save_path, 'w', encoding='utf-8') as file:
             file.write('\n'.join(lines) + '\n')
 
@@ -95,6 +95,7 @@ def _summarize_curve_json(d):
     info = (sections.get('gps_gl2zhat_fine') or [{}])[0]
     models = sections.get('modcurve_models', [])
     points = sections.get('modcurve_points', [])
+    modelmaps = sections.get('modcurve_modelmaps', [])
 
     gon_bounds = info.get('q_gonality_bounds') or [None, None]
     is_hyperelliptic = (gon_bounds[0] == 2 and gon_bounds[1] == 2)
@@ -138,7 +139,6 @@ def _summarize_curve_json(d):
     return {
         'label': info.get('label'),
         'genus': info.get('genus'),
-        'newforms_decomp': newforms_decomp,
         'analytic_rank': info.get('rank'),
         'q_gonality_bounds': gon_bounds,
         'is_hyperelliptic': is_hyperelliptic,
@@ -156,14 +156,15 @@ def _summarize_curve_json(d):
             }
             for p in points if p.get('degree') == 1
         ],
+        'modelmaps': modelmaps
     }
 
 
 def collect_curves_data(genus, rank):
     data_path = f'./data/genus{genus}'
-    curves_path = data_path + f'/curves_rank_{rank}'
+    curves_path = data_path + f'/curves_data_rank_{rank}'
     os.makedirs(curves_path, exist_ok=True)
-    curves_list = pd.read_csv(data_path + f"/rank_{rank}.csv")
+    curves_list = pd.read_csv(data_path + f"/curves_label_rank_{rank}.csv")
     columns_names = {col: col.split('"')[3] for col in curves_list.columns}
     curves_list.rename(columns=columns_names, inplace=True)
     session = requests.Session()
@@ -178,26 +179,12 @@ def collect_curves_data(genus, rank):
     })
     session.cookies.set('human', '1', domain='beta.lmfdb.org', path='/')
 
-    # Seed covered from existing JSON files so resuming and deduplication both work.
-    covered = set()
-    for fname in os.listdir(curves_path):
-        if not fname.endswith('.json'):
-            continue
-        with open(os.path.join(curves_path, fname)) as f:
-            existing = json.load(f)
-        if existing.get('newforms_decomp'):
-            covered.add(frozenset(tuple(x) for x in existing['newforms_decomp']))
-
     for _, row in curves_list.iterrows():
         label = row['label']
         url_curve = curve_data_url.format(curve_label=label)
         response = session.get(url_curve, timeout=30)
         response.raise_for_status()
         summary = _summarize_curve_json(response.json())
-        newforms_decomp = frozenset(tuple(x) for x in summary['newforms_decomp'])
-        if newforms_decomp in covered:
-            continue
-        covered.add(newforms_decomp)
         save_path = os.path.join(curves_path, f'{label}.json')
         with open(save_path, 'w', encoding='utf-8') as file:
             json.dump(summary, file, indent=2)

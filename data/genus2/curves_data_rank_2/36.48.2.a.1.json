@@ -1,0 +1,119 @@
+{
+  "label": "36.48.2.a.1",
+  "genus": 2,
+  "analytic_rank": 2,
+  "q_gonality_bounds": [
+    2,
+    2
+  ],
+  "is_hyperelliptic": true,
+  "embedded_model": {
+    "model_type": 8,
+    "equation": [
+      "x*z*w-y*z*w-2*x*w^2-y*w^2",
+      "x*z^2-y*z^2-2*x*z*w-y*z*w",
+      "x^2*z-x*y*z-2*x^2*w-x*y*w",
+      "x*y*z-y^2*z-2*x*y*w-y^2*w",
+      "x^2*z+2*x*y*z+z^3-x^2*w+y^2*w-6*z^2*w+3*z*w^2+w^3",
+      "x^3+6*x^2*y+3*x*y^2-y^3-2*x*z^2+5*y*z^2-x*z*w-5*y*z*w+x*w^2-y*w^2"
+    ],
+    "number_variables": 4,
+    "smooth": true
+  },
+  "weierstrass_model": {
+    "model_type": 5,
+    "equation": "[0, x^6 - 15*x^4 + 20*x^3 - 6*x + 1]",
+    "number_variables": 3,
+    "smooth": true
+  },
+  "known_rational_points": [
+    {
+      "coordinates": {
+        "2": [
+          "2:0:1",
+          "1/2:3/2:1",
+          "-1:-3:1",
+          "-1:3:1",
+          "1/2:-3/2:1"
+        ],
+        "5": [
+          "1:1:1",
+          "1:-1:0",
+          "0:1:1",
+          "0:-1:1",
+          "1:1:0",
+          "1:-1:1"
+        ],
+        "8": [
+          "-3:0:2:1",
+          "-3/2:3/2:1/2:1",
+          "0:-3:-1:1",
+          "0:3:-1:1",
+          "3/2:-3/2:1/2:1",
+          "3:0:2:1"
+        ]
+      },
+      "cusp": false,
+      "jinv": "790272",
+      "jorig": null,
+      "residue_field": "1.1.1.1",
+      "cm": 0,
+      "isolated": 4
+    }
+  ],
+  "modelmaps": [
+    {
+      "id": 41275,
+      "codomain_label": "1.1.0.a.1",
+      "codomain_model_type": 1,
+      "coordinates": [
+        "334611*x^2*y^8+11973825*x^2*y^6*w^2+24115320*x^2*y^4*w^4-20881476*x^2*y^2*w^6+368721477*x^2*w^8+194643*x*y^9+8686764*x*y^7*w^2+51321600*x*y^5*w^4-169270884*x*y^3*w^6+2235449178*x*y*w^8-63423*y^10-1056321*y^8*w^2+20204964*y^6*w^4-118853244*y^4*w^6+1503699876*y^2*w^8+2461*z^10-102337*z^9*w+1762935*z^8*w^2-16045128*z^7*w^3+80662455*z^6*w^4-191021766*z^5*w^5-101031330*z^4*w^6+2017224966*z^3*w^7-4953014463*z^2*w^8+1932864418*z*w^9+716290619*w^10",
+        "(17*z-26*w)*(z^3-3*z*w^2+w^3)*(z^3-6*z^2*w+3*z*w^2+w^3)^2"
+      ],
+      "degree": 48,
+      "domain_label": "36.48.2.a.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": true,
+      "leading_coefficients": [
+        "2^3*3^3",
+        "1"
+      ],
+      "upload_id": null
+    },
+    {
+      "id": 41276,
+      "codomain_label": "36.48.2.a.1",
+      "codomain_model_type": 2,
+      "coordinates": [
+        "z",
+        "y",
+        "w"
+      ],
+      "degree": 1,
+      "domain_label": "36.48.2.a.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 41277,
+      "codomain_label": "36.48.2.a.1",
+      "codomain_model_type": 5,
+      "coordinates": [
+        "1/3*z^2-1/3*z*w-2/3*w^2",
+        "-1/3*y*z^5+4/3*y*z^4*w-1/3*y*z^3*w^2-13/3*y*z^2*w^3+16/3*y*z*w^4-4/3*y*w^5",
+        "2/3*z^2-5/3*z*w+2/3*w^2"
+      ],
+      "degree": 1,
+      "domain_label": "36.48.2.a.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "label": "48.96.2.f.2",
+  "genus": 2,
+  "analytic_rank": 0,
+  "q_gonality_bounds": [
+    2,
+    2
+  ],
+  "is_hyperelliptic": true,
+  "embedded_model": {
+    "model_type": 8,
+    "equation": [
+      "2*x*y*w-2*y^2*w-x*z*w+z^2*w",
+      "2*x*y^2-2*y^3-x*y*z+y*z^2",
+      "2*x^2*y-2*x*y^2-x^2*z+x*z^2",
+      "2*x*y*z-2*y^2*z-x*z^2+z^3",
+      "2*x^2*y-4*x*y^2-4*y^3+2*x^2*z+10*y^2*z-9*x*z^2+2*y*z^2+7*z^3-y*w^2+z*w^2",
+      "6*x^3-8*x^2*y+4*x*y^2-14*y^3-17*x^2*z+23*x*y*z+18*y^2*z+8*x*z^2-17*y*z^2+3*z^3+x*w^2-3*y*w^2+2*z*w^2"
+    ],
+    "number_variables": 4,
+    "smooth": true
+  },
+  "weierstrass_model": {
+    "model_type": 5,
+    "equation": "[0, -6*x^5 - 12*x^4 - 12*x^2 + 6*x]",
+    "number_variables": 3,
+    "smooth": true
+  },
+  "known_rational_points": [
+    {
+      "coordinates": {
+        "8": [
+          "0:0:0:1",
+          "1:0:1:0"
+        ]
+      },
+      "cusp": true,
+      "jinv": null,
+      "jorig": null,
+      "residue_field": "1.1.1.1",
+      "cm": 0,
+      "isolated": null
+    }
+  ],
+  "modelmaps": [
+    {
+      "id": 61342,
+      "codomain_label": "1.1.0.a.1",
+      "codomain_model_type": 1,
+      "coordinates": [
+        "503884800*x^2*z^18+45349632*x^2*z^16*w^2+279936*x^2*z^14*w^4+67884480*x^2*z^12*w^6-51282720*x^2*z^10*w^8+32784912*x^2*z^8*w^10-10767384*x^2*z^6*w^12+1135764*x^2*z^4*w^14-25050*x^2*z^2*w^16+48*x^2*w^18-1672897536*x*z^19-186437376*x*z^17*w^2-63265536*x*z^15*w^4-148039488*x*z^13*w^6+103063104*x*z^11*w^8-66221712*x*z^9*w^10+18969552*x*z^7*w^12-1228140*x*z^5*w^14-22488*x*z^3*w^16+560*x*z*w^18+604661760*y^2*z^18-191476224*y^2*z^16*w^2+87340032*y^2*z^14*w^4-90792576*y^2*z^12*w^6+70201728*y^2*z^10*w^8-43553376*y^2*z^8*w^10+13690944*y^2*z^6*w^12-1328184*y^2*z^4*w^14+26496*y^2*z^2*w^16-32*y^2*w^18+403107840*y*z^19+268738560*y*z^17*w^2+24074496*y*z^15*w^4+118319616*y*z^13*w^6-80326080*y*z^11*w^8+51611904*y*z^9*w^10-12954384*y*z^7*w^12+401760*y*z^5*w^14+44748*y*z^3*w^16-576*y*z*w^18+1148857344*z^20+293932800*z^18*w^2+41710464*z^16*w^4+96484608*z^14*w^6-64128672*z^12*w^8+42296256*z^10*w^10-13578840*z^8*w^12+1372320*z^6*w^14-27642*z^4*w^16+z^2*w^18",
+        "w^4*z^8*(864*x^2*z^4*w^2-246*x^2*z^2*w^4+3*x^2*w^6-864*x*z^7-1872*x*z^5*w^2+420*x*z^3*w^4+11*x*z*w^6+1728*y^2*z^6-1152*y^2*z^4*w^2+264*y^2*z^2*w^4-2*y^2*w^6+1440*y*z^5*w^2-228*y*z^3*w^4-12*y*z*w^6+864*z^8+1296*z^6*w^2-318*z^4*w^4)"
+      ],
+      "degree": 96,
+      "domain_label": "48.96.2.f.2",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": true,
+      "leading_coefficients": [
+        "1",
+        "3^4"
+      ],
+      "upload_id": null
+    },
+    {
+      "id": 61343,
+      "codomain_label": "48.96.2.f.2",
+      "codomain_model_type": 2,
+      "coordinates": [
+        "y",
+        "1/6*w",
+        "1/2*z"
+      ],
+      "degree": 1,
+      "domain_label": "48.96.2.f.2",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 61344,
+      "codomain_label": "48.96.2.f.2",
+      "codomain_model_type": 5,
+      "coordinates": [
+        "-y+z",
+        "-2*y^2*w+3*y*z*w-z^2*w",
+        "-y"
+      ],
+      "degree": 1,
+      "domain_label": "48.96.2.f.2",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    }
+  ]
+}

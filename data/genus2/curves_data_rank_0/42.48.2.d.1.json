@@ -1,0 +1,100 @@
+{
+  "label": "42.48.2.d.1",
+  "genus": 2,
+  "analytic_rank": 0,
+  "q_gonality_bounds": [
+    2,
+    2
+  ],
+  "is_hyperelliptic": true,
+  "embedded_model": {
+    "model_type": 8,
+    "equation": [
+      "y*z*w-3*x*w^2",
+      "y*z^2-3*x*z*w",
+      "y^2*z-3*x*y*w",
+      "x*y*z-3*x^2*w",
+      "3*x^3+6*x^2*y-2*x*y^2-7*y^3+z^2*w-3*z*w^2",
+      "3*x^3+9*x^2*y+7*x*y^2+z^2*w"
+    ],
+    "number_variables": 4,
+    "smooth": true
+  },
+  "weierstrass_model": {
+    "model_type": 5,
+    "equation": "[x^3 + 1, 13*x^3 - 7]",
+    "number_variables": 3,
+    "smooth": true
+  },
+  "known_rational_points": [
+    {
+      "coordinates": {
+        "8": [
+          "0:0:1:0",
+          "0:0:0:1"
+        ]
+      },
+      "cusp": true,
+      "jinv": null,
+      "jorig": null,
+      "residue_field": "1.1.1.1",
+      "cm": 0,
+      "isolated": null
+    }
+  ],
+  "modelmaps": [
+    {
+      "id": 57819,
+      "codomain_label": "1.1.0.a.1",
+      "codomain_model_type": 1,
+      "coordinates": [
+        "1963008*x*y^6*w^3-183216384*x*y^3*w^6+7*x*z^9-189*x*z^8*w+2373*x*z^7*w^2-19278*x*z^6*w^3+121779*x*z^5*w^4-678699*x*z^4*w^5+3552255*x*z^3*w^6-17727822*x*z^2*w^7+84446145*x*z*w^8-383352669*x*w^9+2405376*y^7*w^3-298162944*y^4*w^6+81*y*w^9",
+        "y^7*(x*y^2+3*y^3+3*w^3)"
+      ],
+      "degree": 48,
+      "domain_label": "42.48.2.d.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": true,
+      "leading_coefficients": [
+        "-1",
+        "1"
+      ],
+      "upload_id": null
+    },
+    {
+      "id": 57820,
+      "codomain_label": "42.48.2.d.1",
+      "codomain_model_type": 2,
+      "coordinates": [
+        "y",
+        "1/3*z",
+        "w"
+      ],
+      "degree": 1,
+      "domain_label": "42.48.2.d.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 57821,
+      "codomain_label": "42.48.2.d.1",
+      "codomain_model_type": 5,
+      "coordinates": [
+        "-w^2",
+        "-1/9*y^3*z*w^2-13/27*y^3*w^3",
+        "-1/3*y*w"
+      ],
+      "degree": 1,
+      "domain_label": "42.48.2.d.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    }
+  ]
+}

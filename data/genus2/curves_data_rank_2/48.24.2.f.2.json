@@ -1,0 +1,100 @@
+{
+  "label": "48.24.2.f.2",
+  "genus": 2,
+  "analytic_rank": 2,
+  "q_gonality_bounds": [
+    2,
+    2
+  ],
+  "is_hyperelliptic": true,
+  "embedded_model": {
+    "model_type": 8,
+    "equation": [
+      "4*x^2*w+y*z*w",
+      "4*x^2*z+y*z^2",
+      "4*x^2*y+y^2*z",
+      "4*x^3+x*y*z",
+      "6*y^3+2*x^2*z-y*z^2+x*w^2",
+      "24*x*y^2-6*x*z^2-z*w^2"
+    ],
+    "number_variables": 4,
+    "smooth": true
+  },
+  "weierstrass_model": {
+    "model_type": 5,
+    "equation": "[0, -3*x^5 + 12*x]",
+    "number_variables": 3,
+    "smooth": true
+  },
+  "known_rational_points": [
+    {
+      "coordinates": {
+        "8": [
+          "0:0:0:1",
+          "0:0:1:0"
+        ]
+      },
+      "cusp": true,
+      "jinv": null,
+      "jorig": null,
+      "residue_field": "1.1.1.1",
+      "cm": 0,
+      "isolated": null
+    }
+  ],
+  "modelmaps": [
+    {
+      "id": 58860,
+      "codomain_label": "1.1.0.a.1",
+      "codomain_model_type": 1,
+      "coordinates": [
+        "1920*x*y*z*w^2-1008*y^2*z^3+256*y*w^4+9*z^5",
+        "z^3*y^2"
+      ],
+      "degree": 24,
+      "domain_label": "48.24.2.f.2",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": true,
+      "leading_coefficients": [
+        "-2^4",
+        "3^2"
+      ],
+      "upload_id": null
+    },
+    {
+      "id": 58861,
+      "codomain_label": "48.24.2.f.2",
+      "codomain_model_type": 2,
+      "coordinates": [
+        "x",
+        "1/6*w",
+        "1/2*z"
+      ],
+      "degree": 1,
+      "domain_label": "48.24.2.f.2",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 58862,
+      "codomain_label": "48.24.2.f.2",
+      "codomain_model_type": 5,
+      "coordinates": [
+        "-1/2*z",
+        "1/8*z^2*w",
+        "-x"
+      ],
+      "degree": 1,
+      "domain_label": "48.24.2.f.2",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    }
+  ]
+}

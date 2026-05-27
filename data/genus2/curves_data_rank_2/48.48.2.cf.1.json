@@ -1,0 +1,83 @@
+{
+  "label": "48.48.2.cf.1",
+  "genus": 2,
+  "analytic_rank": 2,
+  "q_gonality_bounds": [
+    2,
+    2
+  ],
+  "is_hyperelliptic": true,
+  "embedded_model": {
+    "model_type": 8,
+    "equation": [
+      "2*x*y-2*x*z-y*w-z*w+2*x*t",
+      "3*x*y+3*x*z+y*w-z*w-w*t",
+      "5*y^2+2*y*z+5*z^2-2*t^2",
+      "6*x^2+y^2+10*y*z+z^2-w^2+6*t^2"
+    ],
+    "number_variables": 5,
+    "smooth": true
+  },
+  "weierstrass_model": {
+    "model_type": 5,
+    "equation": "[0, x^6 + 30*x^4 - 180*x^2 - 216]",
+    "number_variables": 3,
+    "smooth": true
+  },
+  "known_rational_points": [],
+  "modelmaps": [
+    {
+      "id": 59716,
+      "codomain_label": "1.1.0.a.1",
+      "codomain_model_type": 1,
+      "coordinates": [
+        "2748*y*z*w^6-39456*y*z*w^4*t^2+25392*y*z*w^2*t^4-4128*y*z*t^6-1685*y*w^6*t+5920*y*w^4*t^3-220*y*w^2*t^5+1685*z*w^6*t-5920*z*w^4*t^3+220*z*w^2*t^5-640*w^8+9782*w^6*t^2-37884*w^4*t^4+17368*w^2*t^6-2112*t^8",
+        "12*y*z*w^6-192*y*z*w^4*t^2+240*y*z*w^2*t^4+96*y*z*t^6+15*y*w^6*t-80*y*w^4*t^3+20*y*w^2*t^5-15*z*w^6*t+80*z*w^4*t^3-20*z*w^2*t^5-2*w^6*t^2-28*w^4*t^4+120*w^2*t^6+64*t^8"
+      ],
+      "degree": 48,
+      "domain_label": "48.48.2.cf.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": true,
+      "leading_coefficients": [
+        "-2^6",
+        "1"
+      ],
+      "upload_id": null
+    },
+    {
+      "id": 59717,
+      "codomain_label": "48.48.2.cf.1",
+      "codomain_model_type": 2,
+      "coordinates": [
+        "x",
+        "2*t",
+        "w"
+      ],
+      "degree": 1,
+      "domain_label": "48.48.2.cf.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 59718,
+      "codomain_label": "48.48.2.cf.1",
+      "codomain_model_type": 5,
+      "coordinates": [
+        "-x^2*w-1/6*w^3",
+        "-12*x^8*t-16*x^6*w^2*t-14/3*x^4*w^4*t-4/9*x^2*w^6*t-1/108*w^8*t",
+        "-x^3-1/6*x*w^2"
+      ],
+      "degree": 1,
+      "domain_label": "48.48.2.cf.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    }
+  ]
+}

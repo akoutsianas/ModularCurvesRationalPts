@@ -1,0 +1,83 @@
+{
+  "label": "30.60.2.j.1",
+  "genus": 2,
+  "analytic_rank": 2,
+  "q_gonality_bounds": [
+    2,
+    2
+  ],
+  "is_hyperelliptic": true,
+  "embedded_model": {
+    "model_type": 8,
+    "equation": [
+      "w^2-y*t-z*t",
+      "5*x*w+t^2",
+      "5*x*y+5*x*z+w*t",
+      "25*x^2+y^2+y*z-z^2"
+    ],
+    "number_variables": 5,
+    "smooth": true
+  },
+  "weierstrass_model": {
+    "model_type": 5,
+    "equation": "[1, x^6 + 1]",
+    "number_variables": 3,
+    "smooth": true
+  },
+  "known_rational_points": [],
+  "modelmaps": [
+    {
+      "id": 36992,
+      "codomain_label": "1.1.0.a.1",
+      "codomain_model_type": 1,
+      "coordinates": [
+        "11250*y^2*z^8+19512*y^2*z^5*t^3+2448*y^2*z^2*t^6+4375*y*z^9-363*y*z^6*t^3-3840*y*z^3*t^6-64*y*t^9-6875*z^10-2262*z^7*t^3+8652*z^4*t^6+512*z*t^9",
+        "y^2*z^8+3*y^2*z^5*t^3-y^2*z^2*t^6+y*z^9+4*y*z^6*t^3+y*z^3*t^6-y*t^9-z^10-3*z^7*t^3+2*z^4*t^6+z*t^9"
+      ],
+      "degree": 60,
+      "domain_label": "30.60.2.j.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": true,
+      "leading_coefficients": [
+        "5^3",
+        "1"
+      ],
+      "upload_id": null
+    },
+    {
+      "id": 36993,
+      "codomain_label": "30.60.2.j.1",
+      "codomain_model_type": 2,
+      "coordinates": [
+        "w",
+        "z",
+        "t"
+      ],
+      "degree": 1,
+      "domain_label": "30.60.2.j.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 36994,
+      "codomain_label": "30.60.2.j.1",
+      "codomain_model_type": 5,
+      "coordinates": [
+        "t",
+        "z*w*t+w^3",
+        "-w"
+      ],
+      "degree": 1,
+      "domain_label": "30.60.2.j.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    }
+  ]
+}

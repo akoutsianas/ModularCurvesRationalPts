@@ -1,0 +1,98 @@
+{
+  "label": "28.48.2.f.1",
+  "genus": 2,
+  "analytic_rank": 0,
+  "q_gonality_bounds": [
+    2,
+    2
+  ],
+  "is_hyperelliptic": true,
+  "embedded_model": {
+    "model_type": 8,
+    "equation": [
+      "y*z^2-x*z*w+y*z*w",
+      "y*z*w-x*w^2+y*w^2",
+      "x*y*z-x^2*w+x*y*w",
+      "y^2*z-x*y*w+y^2*w",
+      "x^2*z-4*x*y*z-3*x^2*w+x*y*w+y^2*w-7*z^2*w-7*z*w^2",
+      "x^3-8*x^2*y+5*x*y^2+y^3-3*y*z^2-4*x*z*w-2*y*z*w-x*w^2+y*w^2"
+    ],
+    "number_variables": 4,
+    "smooth": true
+  },
+  "weierstrass_model": {
+    "model_type": 5,
+    "equation": "[0, 7*x^5 - 63*x^4 + 91*x^3 - 28*x^2 - 7*x]",
+    "number_variables": 3,
+    "smooth": true
+  },
+  "known_rational_points": [
+    {
+      "coordinates": {
+        "8": [
+          "0:0:0:1",
+          "0:0:1:0",
+          "0:0:-1:1"
+        ]
+      },
+      "cusp": true,
+      "jinv": null,
+      "jorig": null,
+      "residue_field": "1.1.1.1",
+      "cm": 0,
+      "isolated": null
+    }
+  ],
+  "modelmaps": [
+    {
+      "id": 36004,
+      "codomain_label": "1.1.0.a.1",
+      "codomain_model_type": 1,
+      "coordinates": [
+        "9961*x^2*y^8+1009916*x^2*y^6*w^2+33875016*x^2*y^4*w^4+347009229*x^2*y^2*w^6-1772263164*x^2*w^8-7014*x*y^9-714069*x*y^7*w^2-24148292*x*y^5*w^4-254064020*x*y^3*w^6+1154738655*x*y*w^8-1365*y^10-137138*y^8*w^2-4515861*y^6*w^4-43392342*y^4*w^6+283004498*y^2*w^8-2401*z^10-14406*z^9*w-72030*z^8*w^2-420175*z^7*w^3-2537857*z^6*w^4-15075879*z^5*w^5-87698926*z^4*w^6-499290351*z^3*w^7-2766024030*z^2*w^8-2341570448*z*w^9-16807*w^10",
+        "w^2*(1423*x^2*y^6-7784*x^2*y^4*w^2-46550*x^2*y^2*w^4-80605*x^2*w^6-1002*x*y^7+5061*x*y^5*w^2+35476*x*y^3*w^4+67914*x*y*w^6-195*y^8+1246*y^6*w^2+5243*y^4*w^4+6174*y^2*w^6-2401*z^3*w^5-48020*z^2*w^6-45619*z*w^7)"
+      ],
+      "degree": 48,
+      "domain_label": "28.48.2.f.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": true,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 36005,
+      "codomain_label": "28.48.2.f.1",
+      "codomain_model_type": 2,
+      "coordinates": [
+        "z",
+        "y",
+        "w"
+      ],
+      "degree": 1,
+      "domain_label": "28.48.2.f.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    },
+    {
+      "id": 36006,
+      "codomain_label": "28.48.2.f.1",
+      "codomain_model_type": 5,
+      "coordinates": [
+        "-w^2",
+        "y*z^3*w^2-5*y*z^2*w^3-8*y*z*w^4-y*w^5",
+        "z*w"
+      ],
+      "degree": 1,
+      "domain_label": "28.48.2.f.1",
+      "domain_model_type": 8,
+      "dont_display": false,
+      "factored": false,
+      "leading_coefficients": null,
+      "upload_id": null
+    }
+  ]
+}
