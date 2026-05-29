@@ -140,6 +140,7 @@ def _summarize_curve_json(d):
         'label': info.get('label'),
         'genus': info.get('genus'),
         'analytic_rank': info.get('rank'),
+        'simple': info.get('simple'),
         'q_gonality_bounds': gon_bounds,
         'is_hyperelliptic': is_hyperelliptic,
         'embedded_model': model_summary(embedded),
