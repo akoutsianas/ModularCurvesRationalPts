@@ -11,6 +11,12 @@ db_list_base_url = "https://beta.lmfdb.org/ModularCurve/Q/"
 db_list_showcol = ("RSZBlabel.RZBlabel.CPlabel.SZlabel.Slabel.conductor.simple.squarefree."
                    "contains_negative_one.dims.models.num_known_degree1_points.pointless.generators")
 curve_data_url = "https://beta.lmfdb.org/ModularCurve/data/{curve_label}?_format=json"
+BP_IDENTIFIED_MODULAR_LABELS = {
+    # Exclude modular curves identified as Q-isomorphic to curves handled in
+    # the Bianchi-Padurariu paper on bielliptic genus-2 curves.
+    '14.48.2.g.1',
+    '28.48.2.j.1',
+}
 
 
 def collect_list_of_curves(genus, rank, mayle_rouse_path='./data/mayle_rouse_curves_list.txt'):
@@ -69,6 +75,11 @@ def collect_list_of_curves(genus, rank, mayle_rouse_path='./data/mayle_rouse_cur
         if mr_labels:
             # We filter we respect to Mayle-Rouse curves list
             lines = [lines[0]] + [l for l in lines[1:] if l.split(',')[0] not in mr_labels]
+        if BP_IDENTIFIED_MODULAR_LABELS:
+            # Remove curves already accounted for via the Bianchi-Padurariu list:
+            # 38416.a.614656.1 <-> 14.48.2.g.1 and
+            # 614656.a.614656.1 <-> 28.48.2.j.1.
+            lines = [lines[0]] + [l for l in lines[1:] if l.split(',')[0] not in BP_IDENTIFIED_MODULAR_LABELS]
         data_path = f'./data/genus{genus}'
         os.makedirs(data_path, exist_ok=True)
         save_path = os.path.join(data_path, f'curves_label_rank_{rank}.csv')
@@ -189,4 +200,3 @@ def collect_curves_data(genus, rank):
         save_path = os.path.join(curves_path, f'{label}.json')
         with open(save_path, 'w', encoding='utf-8') as file:
             json.dump(summary, file, indent=2)
-
